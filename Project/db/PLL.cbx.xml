@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PLL">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav0_2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav1_1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav2_0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav0_3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav1_2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav2_1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav3_0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav0_0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav1_3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav2_2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav3_1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|PLL:UPLL|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav0_1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav1_0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav2_3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav3_2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pwm:Uwav3_3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0191.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

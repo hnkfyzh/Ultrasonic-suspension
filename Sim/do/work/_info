@@ -1,0 +1,91 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/16339/Desktop/FPGALearning/PLL/Sim/do
+vPLL
+Z1 !s110 1644322298
+!i10b 1
+!s100 ?of1i:PUAhmOZj=Tb?Mom2
+Ic>Im>m;GaBIMlWMmT@_`g1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1643895306
+8../../Project/PLL.v
+F../../Project/PLL.v
+Z3 L0 39
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1644322298.673000
+!s107 ../../Project/PLL.v|
+!s90 -reportprogress|300|../../Project/PLL.v|
+!i113 1
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@p@l@l
+vpll_top
+R1
+!i10b 1
+!s100 Ozj3j=3`CHK>ZeT^Ro=3>0
+I6E3SjQI:EVC:9>FDIWRW[1
+R2
+R0
+w1644322273
+8../../Source/pll_top.v
+F../../Source/pll_top.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1644322298.299000
+!s107 ../../Source/pll_top.v|
+!s90 -reportprogress|300|../../Source/pll_top.v|
+!i113 1
+R5
+vpll_top_tb
+R1
+!i10b 1
+!s100 J:2Snz`MH5`Z3MV7>0QAh1
+IA9XTV40N=gmSZGjkTATZU2
+R2
+R0
+w1644068318
+8../pll_top_tb.v
+F../pll_top_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1644322298.868000
+!s107 ../pll_top_tb.v|
+!s90 -reportprogress|300|../pll_top_tb.v|
+!i113 1
+R5
+vpwm
+R1
+!i10b 1
+!s100 _fGDl1BXJ4DnEElhh3J0@2
+IHBIOgSmQ3SEjkWl@0cGEI0
+R2
+R0
+w1643895662
+8../../Source/pwm.v
+F../../Source/pwm.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1644322298.482000
+!s107 ../../Source/pwm.v|
+!s90 -reportprogress|300|../../Source/pwm.v|
+!i113 1
+R5

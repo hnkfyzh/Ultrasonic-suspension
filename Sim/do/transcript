@@ -1,0 +1,84 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:11:38 on Feb 08,2022
+# vlog -reportprogress 300 ../../Source/pll_top.v 
+# -- Compiling module pll_top
+# 
+# Top level modules:
+# 	pll_top
+# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:11:38 on Feb 08,2022
+# vlog -reportprogress 300 ../../Source/pwm.v 
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:11:38 on Feb 08,2022
+# vlog -reportprogress 300 ../../Project/PLL.v 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:11:38 on Feb 08,2022
+# vlog -reportprogress 300 ../pll_top_tb.v 
+# -- Compiling module pll_top_tb
+# 
+# Top level modules:
+# 	pll_top_tb
+# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -do "sim.do" 
+# Start time: 20:11:39 on Feb 08,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.pll_top_tb
+# Loading work.pll_top
+# Loading work.PLL
+# Loading Altera_lib.altpll
+# Loading Altera_lib.ALTERA_DEVICE_FAMILIES
+# Loading Altera_lib.pll_iobuf
+# Loading work.pwm
+# Loading Altera_lib.altsyncram
+# Loading Altera_lib.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading Altera_lib.MF_cycloneiii_pll
+# Loading Altera_lib.cda_m_cntr
+# Loading Altera_lib.cda_n_cntr
+# Loading Altera_lib.cda_scale_cntr
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 16339  Hostname: DESKTOP-H7HP38C  ProcessID: 11088
+# 
+#           Attempting to use alternate WLF file "./wlftw516tk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw516tk
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: pll_top_tb.Upll_top.UPLL.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/pll_top_tb/Upll_top/*

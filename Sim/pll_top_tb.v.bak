@@ -1,0 +1,25 @@
+`timescale 1ns/1ps
+module pll_top_tb;
+	reg					clk				;
+	reg					rst_n			;
+	wire				clk_out			;
+	wire                pwm1            ;
+	wire                pwm2            ;
+	wire                pwm3            ;
+initial
+begin
+	clk = 0;
+	rst_n=0;
+	#100
+	rst_n=1;
+end
+always #10 clk=~clk;
+pll_top Upll_top(
+	.clk		(clk	),
+	.rst_n		(rst_n	),
+	.clk_out    (clk_out),
+	.pwm1       (pwm1)   ,
+	.pwm2       (pwm2)   ,
+	.pwm3       (pwm3)   
+	)
+	endmodule

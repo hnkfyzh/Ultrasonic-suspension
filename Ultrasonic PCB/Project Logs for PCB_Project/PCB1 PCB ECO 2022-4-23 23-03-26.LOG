@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=TDO Pin=J1-9
+Added Pin To Net: NetName=TDI Pin=J1-9
+Add Pin To Net: Unknown Pin: Pin U11-4
+Add Pin To Net: Unknown Pin: Pin U12-4
+Add Pin To Net: Unknown Pin: Pin U13-4
+Added Room: Name=Sheet1

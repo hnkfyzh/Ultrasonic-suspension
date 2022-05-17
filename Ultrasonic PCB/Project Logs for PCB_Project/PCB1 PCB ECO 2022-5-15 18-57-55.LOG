@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=Y2 Old Footprint=OSC UM-1 New Footprint=OSC UM-5
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Room: Name=Sheet1

@@ -47,6 +47,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\..\..\SRTP声悬浮\CH340.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OFHHWPJG
+
+[Document2]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\2.07-SOT封装.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -63,7 +80,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RKHVBMLR
 
-[Document2]
+[Document3]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\1.20-电感.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -80,7 +97,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NNGSFNQH
 
-[Document3]
+[Document4]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\1.10-电容.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -97,7 +114,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UHHYYYDN
 
-[Document4]
+[Document5]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\1.31-LED发光二极管.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -114,7 +131,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QXTCJMEB
 
-[Document5]
+[Document6]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\4.30-KF-5.08连接器.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -131,7 +148,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IXCEXBEI
 
-[Document6]
+[Document7]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\1.01-电阻.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -148,7 +165,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RFQWERTA
 
-[Document7]
+[Document8]
 DocumentPath=..\..\..\SRTP声悬浮\EP4CE6封装.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -165,7 +182,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GPLDBOSS
 
-[Document8]
+[Document9]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\2.00-SOP、SOIC封装.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -182,7 +199,41 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AKYJXGRX
 
-[Document9]
+[Document10]
+DocumentPath=..\..\..\SRTP声悬浮\microusb1.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OHKYEQHE
+
+[Document11]
+DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\1.40-晶振、晶体.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YNTAPJYT
+
+[Document12]
 DocumentPath=..\..\..\AD库文件\开关_按键\开关_按键\开关_按键封装库.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -199,7 +250,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QMAFJYHE
 
-[Document10]
+[Document13]
+DocumentPath=..\..\..\FPGA最小系统板\FPGA最小系统板\EP4CE6E22C8最小系统.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PPYUOYOH
+
+[Document14]
 DocumentPath=..\..\..\SRTP声悬浮\7050晶振.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -216,7 +284,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WUPPDNHN
 
-[Document11]
+[Document15]
 DocumentPath=..\..\..\AD库文件\PCB-3D通用封装库\4.50-FPC插座-0.5mm间距.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -233,7 +301,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NXFLSWMX
 
-[Document12]
+[Document16]
 DocumentPath=..\..\..\AD库文件\通用原理图库\0.7 - 常用按键-开关.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -250,7 +318,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OSTSMWBA
 
-[Document13]
+[Document17]
 DocumentPath=..\..\..\AD库文件\通用原理图库\1.1 - 电源类芯片.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -267,7 +335,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GGMYEOGS
 
-[Document14]
+[Document18]
 DocumentPath=..\..\..\AD库文件\通用原理图库\6.1 - 接插件-脚距5.08 (200mil) .SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -284,7 +352,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TSPEPTPV
 
-[Document15]
+[Document19]
 DocumentPath=..\..\..\AD库文件\通用原理图库\5.4 - 接插件-脚距2.54 (100mil) .SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -301,7 +369,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MTKYSNSG
 
-[Document16]
+[Document20]
 DocumentPath=Sheet1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -318,7 +386,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EJABZDDT
 
-[Document17]
+[Document21]
 DocumentPath=PCB1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -334,6 +402,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TWKCIHTD
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_Project\Design Rule Check - PCB1.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources

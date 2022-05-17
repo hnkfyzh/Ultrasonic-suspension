@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=D1 Old Footprint=R 0603_M New Footprint=LED-0805
+Change Component Footprint: Designator=D2 Old Footprint=R 0603_M New Footprint=LED-0805
+Change Component Footprint: Designator=D3 Old Footprint=R 0603_M New Footprint=LED-0805
+Change Component Footprint: Designator=D4 Old Footprint=R 0603_M New Footprint=LED-0805
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Room: Name=Sheet1

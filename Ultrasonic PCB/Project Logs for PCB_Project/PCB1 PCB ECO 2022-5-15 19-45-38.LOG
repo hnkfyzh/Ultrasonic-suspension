@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=5V Pin=R22-1
+Removed Pin From Net: NetName=5V Pin=R23-1
+Added Pin To Net: NetName=3.3V Pin=R22-1
+Added Pin To Net: NetName=3.3V Pin=R23-1
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Room: Name=Sheet1

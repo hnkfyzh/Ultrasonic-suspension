@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=C27 Old Footprint=C 0805_M New Footprint=C 0603_M
+Change Component Footprint: Designator=C28 Old Footprint=C 0805_M New Footprint=C 0603_M
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Room: Name=Sheet1

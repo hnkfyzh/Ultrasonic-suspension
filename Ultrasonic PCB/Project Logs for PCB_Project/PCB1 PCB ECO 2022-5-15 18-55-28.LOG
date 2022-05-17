@@ -1,0 +1,23 @@
+Change Component Footprint: Designator=D1 Old Footprint=0603 New Footprint=R 0603_M
+Change Component Footprint: Designator=D2 Old Footprint=0603 New Footprint=R 0603_M
+Change Component Footprint: Designator=D3 Old Footprint=0603 New Footprint=R 0603_M
+Change Component Footprint: Designator=D4 Old Footprint=0603 New Footprint=R 0603_M
+Change Component Footprint: Designator=C3 Old Footprint=C 0603_M New Footprint=C 0805_M
+Change Component Footprint: Designator=C6 Old Footprint=C 0603_M New Footprint=C 0805_M
+Change Component Footprint: Designator=C7 Old Footprint=C 0603_M New Footprint=C 0805_M
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Member To Class: ClassName=Sheet1 Member=Component C8 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C9 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C11 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C13 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C15 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C17 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C19 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C21 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C23 0.1uF
+Added Member To Class: ClassName=Sheet1 Member=Component C25 Cap
+Added Member To Class: ClassName=Sheet1 Member=Component FPC2 F0500WR-S-32PNLNG1GB0R
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 3
+Added Room: Name=Sheet1

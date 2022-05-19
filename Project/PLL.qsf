@@ -51,6 +51,12 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_24 -to clk
+set_location_assignment PIN_91 -to rst_n
+set_location_assignment PIN_72 -to led
+set_location_assignment PIN_33 -to uart_rx
+set_location_assignment IOBANK_1 -to wav2_3
+set_global_assignment -name VERILOG_FILE ../Source/my_uart_tx.v
 set_global_assignment -name VERILOG_FILE ../Source/my_uart_rx.v
 set_global_assignment -name VERILOG_FILE ../Source/speed_setting.v
 set_global_assignment -name VERILOG_FILE ../Source/pll_top.v
@@ -58,10 +64,6 @@ set_global_assignment -name QIP_FILE PLL.qip
 set_global_assignment -name VERILOG_FILE ../Sim/pll_top_tb.v
 set_global_assignment -name MIF_FILE ../Source/pwm.mif
 set_global_assignment -name QIP_FILE ../Source/pwm.qip
-set_location_assignment PIN_24 -to clk
-set_location_assignment PIN_91 -to rst_n
-set_location_assignment PIN_72 -to led
-set_location_assignment PIN_33 -to uart_rx
 set_global_assignment -name VERILOG_FILE ../Source/Switch_Ctrl.v
+set_location_assignment PIN_32 -to uart_tx
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_location_assignment IOBANK_1 -to wav2_3

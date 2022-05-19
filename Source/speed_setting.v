@@ -1,32 +1,32 @@
 `timescale 1ns/1ps
 module speed_setting(
-				input clk,	// 50MHzÖ÷Ê±ÖÓ
-				input rst_n,	//µÍµçÆ½¸´Î»ĞÅºÅ
-				input bps_start,	//½ÓÊÕµ½Êı¾İºó£¬²¨ÌØÂÊÊ±ÖÓÆô¶¯ĞÅºÅÖÃÎ»
-				output reg clk_bps	// clk_bpsµÄ¸ßµçÆ½Îª½ÓÊÕ»òÕß·¢ËÍÊı¾İÎ»µÄÖĞ¼ä²ÉÑùµã 
+				input clk,	// 50MHzä¸»æ—¶é’Ÿ
+				input rst_n,	//ä½ç”µå¹³å¤ä½ä¿¡å·
+				input bps_start,	//æ¥æ”¶åˆ°æ•°æ®åï¼Œæ³¢ç‰¹ç‡æ—¶é’Ÿå¯åŠ¨ä¿¡å·ç½®ä½
+				output reg clk_bps	// clk_bpsçš„é«˜ç”µå¹³ä¸ºæ¥æ”¶æˆ–è€…å‘é€æ•°æ®ä½çš„ä¸­é—´é‡‡æ ·ç‚¹ 
 			);
 
 `define BPS_9600
-`define CLK_PERIORD	20	//¶¨ÒåÊ±ÖÓÖÜÆÚÎª20ns(50MHz)
-`define BPS_SET		96	//¶¨ÒåÍ¨ĞÅ²¨ÌØÂÊÎª9600bps(½«ĞèÒªµÄ²¨ÌØÂÊÊ¡È¥Á½¸öÁãºó¶¨Òå¼´¿É)
+`define CLK_PERIORD	20	//å®šä¹‰æ—¶é’Ÿå‘¨æœŸä¸º20ns(50MHz)
+`define BPS_SET		96	//å®šä¹‰é€šä¿¡æ³¢ç‰¹ç‡ä¸º9600bps(å°†éœ€è¦çš„æ³¢ç‰¹ç‡çœå»ä¸¤ä¸ªé›¶åå®šä¹‰å³å¯)
 
-`define BPS_PARA	(10_000_000/`CLK_PERIORD/`BPS_SET)//10_000_000/`CLK_PERIORD/96;		//²¨ÌØÂÊÎª9600Ê±µÄ·ÖÆµ¼ÆÊıÖµ
-`define BPS_PARA_2	(`BPS_PARA/2)//BPS_PARA/2;	//²¨ÌØÂÊÎª9600Ê±µÄ·ÖÆµ¼ÆÊıÖµµÄÒ»°ë£¬ÓÃÓÚÊı¾İ²ÉÑù
+`define BPS_PARA	(10_000_000/`CLK_PERIORD/`BPS_SET)//10_000_000/`CLK_PERIORD/96;		//æ³¢ç‰¹ç‡ä¸º9600æ—¶çš„åˆ†é¢‘è®¡æ•°å€¼
+`define BPS_PARA_2	(`BPS_PARA/2)//BPS_PARA/2;	//æ³¢ç‰¹ç‡ä¸º9600æ—¶çš„åˆ†é¢‘è®¡æ•°å€¼çš„ä¸€åŠï¼Œç”¨äºæ•°æ®é‡‡æ ·
 
-reg[15:0] cnt;			//·ÖÆµ¼ÆÊı
+reg[15:0] cnt;			//åˆ†é¢‘è®¡æ•°
 
 //----------------------------------------------------------
-reg[2:0] uart_ctrl;	// uart²¨ÌØÂÊÑ¡Ôñ¼Ä´æÆ÷
+reg[2:0] uart_ctrl;	// uartæ³¢ç‰¹ç‡é€‰æ‹©å¯„å­˜å™¨
 //----------------------------------------------------------
 
 always @ (posedge clk or negedge rst_n)
 	if(!rst_n) cnt <= 16'd0;
-	else if((cnt == `BPS_PARA) || !bps_start) cnt <= 16'd0;	//²¨ÌØÂÊ¼ÆÊıÇåÁã
-	else cnt <= cnt+1'b1;			//²¨ÌØÂÊÊ±ÖÓ¼ÆÊıÆô¶¯
+	else if((cnt == `BPS_PARA) || !bps_start) cnt <= 16'd0;	//æ³¢ç‰¹ç‡è®¡æ•°æ¸…é›¶
+	else cnt <= cnt+1'b1;			//æ³¢ç‰¹ç‡æ—¶é’Ÿè®¡æ•°å¯åŠ¨
 
 always @ (posedge clk or negedge rst_n)
 	if(!rst_n) clk_bps <= 1'b0;
-	else if(cnt == `BPS_PARA_2) clk_bps <= 1'b1;	// clk_bps_r¸ßµçÆ½Îª½ÓÊÕÊı¾İÎ»µÄÖĞ¼ä²ÉÑùµã,Í¬Ê±Ò²×÷Îª·¢ËÍÊı¾İµÄÊı¾İ¸Ä±äµã
+	else if(cnt == `BPS_PARA_2) clk_bps <= 1'b1;	// clk_bps_ré«˜ç”µå¹³ä¸ºæ¥æ”¶æ•°æ®ä½çš„ä¸­é—´é‡‡æ ·ç‚¹,åŒæ—¶ä¹Ÿä½œä¸ºå‘é€æ•°æ®çš„æ•°æ®æ”¹å˜ç‚¹
 	else clk_bps <= 1'b0;
 
 	

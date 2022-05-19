@@ -387,7 +387,7 @@ GenerateClassCluster=0
 DocumentUniqueId=EJABZDDT
 
 [Document21]
-DocumentPath=PCB1.PcbDoc
+DocumentPath=Ultrasonic suspension.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

@@ -1,5 +1,5 @@
 Flow report for PLL
-Sat Apr 09 11:49:36 2022
+Thu May 19 11:32:19 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 09 11:49:32 2022            ;
+; Flow Status                        ; Successful - Thu May 19 11:32:14 2022            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; PLL                                              ;
 ; Top-level Entity Name              ; pll_top                                          ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE6E22C8                                      ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 214 / 6,272 ( 3 % )                              ;
-;     Total combinational functions  ; 182 / 6,272 ( 3 % )                              ;
-;     Dedicated logic registers      ; 136 / 6,272 ( 2 % )                              ;
-; Total registers                    ; 136                                              ;
-; Total pins                         ; 21 / 92 ( 23 % )                                 ;
+; Total logic elements               ; 254 / 6,272 ( 4 % )                              ;
+;     Total combinational functions  ; 225 / 6,272 ( 4 % )                              ;
+;     Dedicated logic registers      ; 167 / 6,272 ( 3 % )                              ;
+; Total registers                    ; 167                                              ;
+; Total pins                         ; 22 / 92 ( 24 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 16,384 / 276,480 ( 6 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/09/2022 11:49:20 ;
+; Start date & time ; 05/19/2022 11:31:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PLL                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 88925236524971.164947616015516 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88925236524971.165293111928360 ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                    ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --         ;
@@ -107,11 +107,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4622 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:06     ; 1.6                     ; 5319 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4543 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4628 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4621 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.8                     ; 5319 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4564 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4625 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

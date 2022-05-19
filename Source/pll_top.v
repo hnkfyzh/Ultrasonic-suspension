@@ -3,6 +3,7 @@ module pll_top(
 	 input	    rst_n     ,
 	 input       uart_rx   ,
 	 output	    clk_out   ,
+	 output      uart_tx   ,
 	 output      wav0_0    ,
 	 output      wav0_1    ,
 	 output      wav0_2    ,
@@ -29,6 +30,7 @@ module pll_top(
     wire  rom_data[7:0][7:0];//从相应地址位置读出的数据（波形）
 	 reg  wav[7:0][7:0];
 	 wire  clk_bps1;
+	 wire  clk_bps2;
     wire  [7:0] rxd_data;
 	 reg   [7:0] databag[4:0];
 	 reg   [3:0] datanum = 0;
@@ -79,7 +81,7 @@ initial begin
  direction_y = 3;
  switch[direction_x][direction_y] = 1;
 end
-
+//初始化，所有置零
 
 always @(negedge clk_out)
 begin
@@ -229,63 +231,81 @@ pwm Uwav3_3 (
 );
 
 speed_setting	Uspeed_rx(	
-	.clk		(clk		),	//������ѡ��ģ��
+	.clk		(clk		),	//波特率选择模块
 	.rst_n		(rst_n	),
 	.bps_start	(bps_start1	),
 	.clk_bps	(clk_bps1	)
 		);
-//UART�������ݴ���
+//UART接收数据处理
 my_uart_rx	Umy_uart_rx(		
-	.clk		(clk		),	//��������ģ��
+	.clk		(clk		),	//接收数据模块
 	.rst_n		(rst_n	),
 	.uart_rx	(uart_rx	),
 	.rx_data	(rxd_data		),
 	.rx_rdy		(rxd_data_rdy		),
 	.clk_bps	(clk_bps1	),
 	.bps_start	(bps_start1	)
-    );
-	 
-
+		);	
+		
+speed_setting	Uspeed_tx(	
+	.clk		(clk		),	//波特率选择模块
+	.rst_n		(rst_n	),
+	.bps_start	(bps_start2	),
+	.clk_bps	(clk_bps2	)
+		);
+		
+my_uart_tx Umy_uart_tx(
+	.clk		(clk			),//25MHz主时钟
+	.rst_n		(rst_n			),//低电平复位信号
+	.clk_bps	(clk_bps2		),//clk_bps_r高电平为接收数据位的中间采样点,同时也作为发送数据的数据改变点
+	.rx_data	(rxd_data		),//接收数据寄存器
+	.rx_int		(rxd_data_rdy	),//接收数据中断信号,接收到数据期间始终为高电平,在该模块中利用它的下降沿来启动串口发送数据
+	.uart_tx	(uart_tx		),// RS232发送数据信号
+	.bps_start	(bps_start2		),//接收或者要发送数据，波特率时钟启动信号置位
+	.byte_end   (				)
+			);
+	
+	
 reg [7:0] direction;//8'h41对应字母‘A’向左移动，8'h44对应字母‘D’向左移动，8'h57对应字母‘W’向前移动，8'h53对应字母‘S’向后移动
 integer e,f;
-always@(posedge rxd_data_rdy)//表示已经接收到了一个数据，触发信号
+always@(posedge rxd_data_rdy)//表示已经接收到了一个数据，触发信号，必须要保证上一个数据接收并运行完之后，下一个数据才过来
 begin
  if(rxd_data == 8'hff && datanum == 0)//开始标志
  begin
-     databag[0] = rxd_data;
-	  led = 0;
-	  datanum = datanum + 1;  
+     databag[0] <= rxd_data;
+	  led <= 0;
+	  datanum <= datanum + 1;  
  end
  
  else if(datanum == 1)//向左/向右移动
  begin
-     databag[1] = rxd_data;
-	  datanum = datanum + 1;
+     databag[1] <= rxd_data;
+	  datanum <= datanum + 1;
  end
  
  else if(datanum == 2)//延迟相位
  begin 
-     databag[2] = rxd_data;
-	  datanum = datanum + 1;
+     databag[2] <= rxd_data;
+	  datanum <= datanum + 1;
  end
  
  else if(rxd_data == 8'h3c && datanum == 3)//结束标志
  begin
-     databag[3] = rxd_data;
+     databag[3] <= rxd_data;
      if(databag[1] == 8'h41)    direction_x = direction_x - 1; 
 	  if(databag[1] == 8'h44)    direction_x = direction_x + 1; 
 	  if(databag[1] == 8'h57)    direction_y = direction_y + 1; 
 	  if(databag[1] == 8'h53)    direction_y = direction_y - 1; 
-	  switch[direction_x][direction_y] = 1;
+	  switch[direction_x][direction_y] = 1;//中心换能器
 	  for(e=0;e<=4;e=e+1)
 	  begin
 	     for(f=0;f<=4;f=f+1)
 		  begin
-		     if(e!=direction_x || f!=direction_y) switch[e][f] = 0;
+		     if(e!=direction_x || f!=direction_y) switch[e][f] = 0;//其它的中心都置0，为的是只让有一个中心
 		  end
 	  end
-	  delay = 4*databag[2];
-	  datanum = 0;
+	  delay <= 4*databag[2];
+	  datanum <= 0;
  end
  else 
  begin

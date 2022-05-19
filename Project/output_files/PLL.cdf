@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Users/16339/Desktop/FPGALearning/PLL/Project/output_files/") File("PLL.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Users/16339/Desktop/Ultrasonic suspension/Ultrasonic-suspension/Project/output_files/") File("PLL.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

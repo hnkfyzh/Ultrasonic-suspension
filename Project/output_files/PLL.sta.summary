@@ -3,111 +3,111 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -6.820
-TNS   : -151.644
+Slack : -9.283
+TNS   : -593.303
 
 Type  : Slow 1200mV 85C Model Setup 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : -4.425
-TNS   : -190.838
+Slack : -4.466
+TNS   : -193.242
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -0.038
-TNS   : -0.266
+Slack : -0.089
+TNS   : -0.498
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.169
-TNS   : -0.169
-
-Type  : Slow 1200mV 85C Model Hold 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : 0.133
+Slack : 0.083
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.434
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'my_uart_rx:Umy_uart_rx|rx_rdy'
+Slack : 0.452
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'my_uart_rx:Umy_uart_rx|rx_rdy'
 Slack : -1.487
-TNS   : -86.246
+TNS   : -89.220
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : 9.780
+Slack : 9.784
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 11.941
+Slack : 11.935
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -6.284
-TNS   : -139.012
+Slack : -8.595
+TNS   : -546.639
 
 Type  : Slow 1200mV 0C Model Setup 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : -4.041
-TNS   : -174.011
+Slack : -4.160
+TNS   : -178.117
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : 0.058
+Slack : 0.032
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.047
-TNS   : -0.047
+Slack : 0.208
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : -0.002
-TNS   : -0.004
+Slack : 0.358
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.388
+Slack : 0.389
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'my_uart_rx:Umy_uart_rx|rx_rdy'
 Slack : -1.487
-TNS   : -86.246
+TNS   : -89.220
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.770
+Slack : 9.772
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 11.921
+Slack : 11.928
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.083
-TNS   : -67.507
+Slack : -4.408
+TNS   : -270.423
 
 Type  : Fast 1200mV 0C Model Setup 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : -1.326
-TNS   : -51.499
+Slack : -1.463
+TNS   : -50.439
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : 0.165
+Slack : 0.160
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.274
-TNS   : -0.465
-
-Type  : Fast 1200mV 0C Model Hold 'my_uart_rx:Umy_uart_rx|rx_rdy'
-Slack : 0.060
-TNS   : 0.000
+Slack : -0.176
+TNS   : -0.236
 
 Type  : Fast 1200mV 0C Model Hold 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.176
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'my_uart_rx:Umy_uart_rx|rx_rdy'
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'my_uart_rx:Umy_uart_rx|rx_rdy'
 Slack : -1.000
-TNS   : -58.000
+TNS   : -60.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.435
+Slack : 9.434
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UPLL|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 11.938
+Slack : 11.943
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -1,5 +1,5 @@
 Assembler report for PLL
-Thu May 19 11:32:14 2022
+Tue Aug 30 23:27:41 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu May 19 11:32:14 2022 ;
+; Assembler Status      ; Successful - Tue Aug 30 23:27:41 2022 ;
 ; Revision Name         ; PLL                                   ;
 ; Top-level Entity Name ; pll_top                               ;
 ; Family                ; Cyclone IV E                          ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                                  ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE6E22C8                                                                                              ;
-; JTAG usercode  ; 0x000F7E81                                                                                               ;
-; Checksum       ; 0x000F7E81                                                                                               ;
+; JTAG usercode  ; 0x0012C5B1                                                                                               ;
+; Checksum       ; 0x0012C5B1                                                                                               ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu May 19 11:32:12 2022
+    Info: Processing started: Tue Aug 30 23:27:39 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PLL -c PLL
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4564 megabytes
-    Info: Processing ended: Thu May 19 11:32:14 2022
+    Info: Peak virtual memory: 4556 megabytes
+    Info: Processing ended: Tue Aug 30 23:27:41 2022
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

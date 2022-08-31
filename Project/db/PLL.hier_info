@@ -8,18 +8,66 @@ wav0_0 <= wav[0][0].DB_MAX_OUTPUT_PORT_TYPE
 wav0_1 <= wav[0][1].DB_MAX_OUTPUT_PORT_TYPE
 wav0_2 <= wav[0][2].DB_MAX_OUTPUT_PORT_TYPE
 wav0_3 <= wav[0][3].DB_MAX_OUTPUT_PORT_TYPE
+wav0_4 <= wav[0][4].DB_MAX_OUTPUT_PORT_TYPE
+wav0_5 <= wav[0][5].DB_MAX_OUTPUT_PORT_TYPE
+wav0_6 <= wav[0][6].DB_MAX_OUTPUT_PORT_TYPE
+wav0_7 <= wav[0][7].DB_MAX_OUTPUT_PORT_TYPE
 wav1_0 <= wav[1][0].DB_MAX_OUTPUT_PORT_TYPE
 wav1_1 <= wav[1][1].DB_MAX_OUTPUT_PORT_TYPE
 wav1_2 <= wav[1][2].DB_MAX_OUTPUT_PORT_TYPE
 wav1_3 <= wav[1][3].DB_MAX_OUTPUT_PORT_TYPE
+wav1_4 <= wav[1][4].DB_MAX_OUTPUT_PORT_TYPE
+wav1_5 <= wav[1][5].DB_MAX_OUTPUT_PORT_TYPE
+wav1_6 <= wav[1][6].DB_MAX_OUTPUT_PORT_TYPE
+wav1_7 <= wav[1][7].DB_MAX_OUTPUT_PORT_TYPE
 wav2_0 <= wav[2][0].DB_MAX_OUTPUT_PORT_TYPE
 wav2_1 <= wav[2][1].DB_MAX_OUTPUT_PORT_TYPE
 wav2_2 <= wav[2][2].DB_MAX_OUTPUT_PORT_TYPE
 wav2_3 <= wav[2][3].DB_MAX_OUTPUT_PORT_TYPE
+wav2_4 <= wav[2][4].DB_MAX_OUTPUT_PORT_TYPE
+wav2_5 <= wav[2][5].DB_MAX_OUTPUT_PORT_TYPE
+wav2_6 <= wav[2][6].DB_MAX_OUTPUT_PORT_TYPE
+wav2_7 <= wav[2][7].DB_MAX_OUTPUT_PORT_TYPE
 wav3_0 <= wav[3][0].DB_MAX_OUTPUT_PORT_TYPE
 wav3_1 <= wav[3][1].DB_MAX_OUTPUT_PORT_TYPE
 wav3_2 <= wav[3][2].DB_MAX_OUTPUT_PORT_TYPE
 wav3_3 <= wav[3][3].DB_MAX_OUTPUT_PORT_TYPE
+wav3_4 <= wav[3][4].DB_MAX_OUTPUT_PORT_TYPE
+wav3_5 <= wav[3][5].DB_MAX_OUTPUT_PORT_TYPE
+wav3_6 <= wav[3][6].DB_MAX_OUTPUT_PORT_TYPE
+wav3_7 <= wav[3][7].DB_MAX_OUTPUT_PORT_TYPE
+wav4_0 <= wav[4][0].DB_MAX_OUTPUT_PORT_TYPE
+wav4_1 <= wav[4][1].DB_MAX_OUTPUT_PORT_TYPE
+wav4_2 <= wav[4][2].DB_MAX_OUTPUT_PORT_TYPE
+wav4_3 <= wav[4][3].DB_MAX_OUTPUT_PORT_TYPE
+wav4_4 <= wav[4][4].DB_MAX_OUTPUT_PORT_TYPE
+wav4_5 <= wav[4][5].DB_MAX_OUTPUT_PORT_TYPE
+wav4_6 <= wav[4][6].DB_MAX_OUTPUT_PORT_TYPE
+wav4_7 <= wav[4][7].DB_MAX_OUTPUT_PORT_TYPE
+wav5_0 <= wav[5][0].DB_MAX_OUTPUT_PORT_TYPE
+wav5_1 <= wav[5][1].DB_MAX_OUTPUT_PORT_TYPE
+wav5_2 <= wav[5][2].DB_MAX_OUTPUT_PORT_TYPE
+wav5_3 <= wav[5][3].DB_MAX_OUTPUT_PORT_TYPE
+wav5_4 <= wav[5][4].DB_MAX_OUTPUT_PORT_TYPE
+wav5_5 <= wav[5][5].DB_MAX_OUTPUT_PORT_TYPE
+wav5_6 <= wav[5][6].DB_MAX_OUTPUT_PORT_TYPE
+wav5_7 <= wav[5][7].DB_MAX_OUTPUT_PORT_TYPE
+wav6_0 <= wav[6][0].DB_MAX_OUTPUT_PORT_TYPE
+wav6_1 <= wav[6][1].DB_MAX_OUTPUT_PORT_TYPE
+wav6_2 <= wav[6][2].DB_MAX_OUTPUT_PORT_TYPE
+wav6_3 <= wav[6][3].DB_MAX_OUTPUT_PORT_TYPE
+wav6_4 <= wav[6][4].DB_MAX_OUTPUT_PORT_TYPE
+wav6_5 <= wav[6][5].DB_MAX_OUTPUT_PORT_TYPE
+wav6_6 <= wav[6][6].DB_MAX_OUTPUT_PORT_TYPE
+wav6_7 <= wav[6][7].DB_MAX_OUTPUT_PORT_TYPE
+wav7_0 <= wav[7][0].DB_MAX_OUTPUT_PORT_TYPE
+wav7_1 <= wav[7][1].DB_MAX_OUTPUT_PORT_TYPE
+wav7_2 <= wav[7][2].DB_MAX_OUTPUT_PORT_TYPE
+wav7_3 <= wav[7][3].DB_MAX_OUTPUT_PORT_TYPE
+wav7_4 <= wav[7][4].DB_MAX_OUTPUT_PORT_TYPE
+wav7_5 <= wav[7][5].DB_MAX_OUTPUT_PORT_TYPE
+wav7_6 <= wav[7][6].DB_MAX_OUTPUT_PORT_TYPE
+wav7_7 <= wav[7][7].DB_MAX_OUTPUT_PORT_TYPE
 led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -371,6 +419,274 @@ clock0 => ram_block1a0.CLK0
 q_a[0] <= ram_block1a0.PORTADATAOUT
 
 
+|pll_top|pwm:Uwav0_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav0_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav0_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav0_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav0_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav0_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav0_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav0_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav0_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav0_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav0_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav0_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
 |pll_top|pwm:Uwav1_0
 address[0] => address[0].IN1
 address[1] => address[1].IN1
@@ -625,6 +941,274 @@ eccstatus[2] <= <GND>
 
 
 |pll_top|pwm:Uwav1_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav1_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav1_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav1_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav1_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav1_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav1_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav1_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav1_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav1_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav1_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav1_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav1_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[1] => ram_block1a0.PORTAADDR1
 address_a[2] => ram_block1a0.PORTAADDR2
@@ -907,6 +1491,274 @@ clock0 => ram_block1a0.CLK0
 q_a[0] <= ram_block1a0.PORTADATAOUT
 
 
+|pll_top|pwm:Uwav2_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav2_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav2_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav2_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav2_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav2_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav2_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav2_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav2_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav2_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav2_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav2_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
 |pll_top|pwm:Uwav3_0
 address[0] => address[0].IN1
 address[1] => address[1].IN1
@@ -1161,6 +2013,2418 @@ eccstatus[2] <= <GND>
 
 
 |pll_top|pwm:Uwav3_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav3_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav3_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav3_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav3_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav3_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav3_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav3_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav3_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav3_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav3_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav3_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav3_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_0
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_0|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_1
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_1|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_2
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_2|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_3
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_3|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav4_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav4_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav4_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_0
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_0|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_1
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_1|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_2
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_2|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_3
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_3|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav5_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav5_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav5_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_0
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_0|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_1
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_1|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_2
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_2|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_3
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_3|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav6_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav6_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav6_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_0
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_0|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_1
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_1|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_2
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_2|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_3
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_3|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_4
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_4|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_5
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_5|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_6
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_6|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+clock0 => ram_block1a0.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+
+
+|pll_top|pwm:Uwav7_7
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+address[5] => address[5].IN1
+address[6] => address[6].IN1
+address[7] => address[7].IN1
+address[8] => address[8].IN1
+address[9] => address[9].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+
+
+|pll_top|pwm:Uwav7_7|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_0191:auto_generated.address_a[0]
+address_a[1] => altsyncram_0191:auto_generated.address_a[1]
+address_a[2] => altsyncram_0191:auto_generated.address_a[2]
+address_a[3] => altsyncram_0191:auto_generated.address_a[3]
+address_a[4] => altsyncram_0191:auto_generated.address_a[4]
+address_a[5] => altsyncram_0191:auto_generated.address_a[5]
+address_a[6] => altsyncram_0191:auto_generated.address_a[6]
+address_a[7] => altsyncram_0191:auto_generated.address_a[7]
+address_a[8] => altsyncram_0191:auto_generated.address_a[8]
+address_a[9] => altsyncram_0191:auto_generated.address_a[9]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_0191:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_0191:auto_generated.q_a[0]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|pll_top|pwm:Uwav7_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[1] => ram_block1a0.PORTAADDR1
 address_a[2] => ram_block1a0.PORTAADDR2

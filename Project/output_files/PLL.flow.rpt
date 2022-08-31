@@ -1,5 +1,5 @@
 Flow report for PLL
-Thu May 19 11:32:19 2022
+Tue Aug 30 23:27:45 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Thu May 19 11:32:14 2022            ;
+; Flow Status                        ; Successful - Tue Aug 30 23:27:41 2022            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; PLL                                              ;
 ; Top-level Entity Name              ; pll_top                                          ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE6E22C8                                      ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 254 / 6,272 ( 4 % )                              ;
-;     Total combinational functions  ; 225 / 6,272 ( 4 % )                              ;
-;     Dedicated logic registers      ; 167 / 6,272 ( 3 % )                              ;
-; Total registers                    ; 167                                              ;
-; Total pins                         ; 22 / 92 ( 24 % )                                 ;
+; Total logic elements               ; 541 / 6,272 ( 9 % )                              ;
+;     Total combinational functions  ; 478 / 6,272 ( 8 % )                              ;
+;     Dedicated logic registers      ; 217 / 6,272 ( 3 % )                              ;
+; Total registers                    ; 217                                              ;
+; Total pins                         ; 70 / 92 ( 76 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 16,384 / 276,480 ( 6 % )                         ;
+; Total memory bits                  ; 16,480 / 276,480 ( 6 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                   ;
 ; Total PLLs                         ; 1 / 2 ( 50 % )                                   ;
 +------------------------------------+--------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/19/2022 11:31:59 ;
+; Start date & time ; 08/30/2022 23:27:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PLL                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 88925236524971.165293111928360 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88925236524971.166187323820744 ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                    ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --         ;
@@ -107,11 +107,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4621 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:08     ; 1.8                     ; 5319 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4564 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4625 MB             ; 00:00:03                           ;
-; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:15                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4630 MB             ; 00:00:05                           ;
+; Fitter                    ; 00:00:14     ; 2.0                     ; 5319 MB             ; 00:00:12                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4641 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:23                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

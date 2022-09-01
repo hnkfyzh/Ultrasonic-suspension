@@ -7,18 +7,66 @@ module pll_top_tb;
 	wire                wav0_1    ;
 	wire                wav0_2    ;
 	wire                wav0_3    ;
+	wire                wav0_4    ;
+	wire                wav0_5    ;
+	wire                wav0_6    ;
+	wire                wav0_7    ;
 	wire                wav1_0    ;
 	wire                wav1_1    ;
 	wire                wav1_2    ;
 	wire                wav1_3    ;
+	wire                wav1_4    ;
+	wire                wav1_5    ;
+	wire                wav1_6    ;
+	wire                wav1_7    ;
 	wire                wav2_0    ;
 	wire                wav2_1    ;
 	wire                wav2_2    ;
 	wire                wav2_3    ;
+	wire                wav2_4    ;
+	wire                wav2_5    ;
+	wire                wav2_6    ;
+	wire                wav2_7    ;
 	wire                wav3_0    ;
 	wire                wav3_1    ;
 	wire                wav3_2    ;
 	wire                wav3_3    ;
+	wire                wav3_4    ;
+	wire                wav3_5    ;
+	wire                wav3_6    ;
+	wire                wav3_7    ;
+	wire                wav4_0    ;
+	wire      			wav4_1    ;
+	wire      			wav4_2    ;
+	wire      			wav4_3    ;
+	wire     		 	wav4_4    ;
+	wire      			wav4_5    ;
+	wire      			wav4_6    ;
+	wire      			wav4_7    ;
+	wire      			wav5_0    ;
+	wire      			wav5_1    ;
+	wire      			wav5_2    ;
+	wire      			wav5_3    ;
+	wire     		 	wav5_4    ;
+	wire      			wav5_5    ;
+	wire      			wav5_6    ;
+	wire      			wav5_7    ;
+	wire      			wav6_0    ;
+	wire      			wav6_1    ;
+	wire      			wav6_2    ;
+	wire      			wav6_3    ;
+	wire      			wav6_4    ;
+	wire      			wav6_5    ;
+	wire      			wav6_6    ;
+	wire      			wav6_7    ;
+	wire      			wav7_0    ;
+	wire      			wav7_1    ;
+	wire      			wav7_2    ;
+	wire      			wav7_3    ;
+	wire      			wav7_4    ;
+	wire      			wav7_5    ;
+	wire      			wav7_6    ;
+	wire      			wav7_7    ;
 initial
 begin
 	clk = 0;
@@ -35,17 +83,65 @@ pll_top Upll_top(
 	.wav0_1       (wav0_1) ,
 	.wav0_2       (wav0_2) ,
 	.wav0_3       (wav0_3) ,
+	.wav0_4       (wav0_4) ,
+	.wav0_5       (wav0_5) ,
+	.wav0_6       (wav0_6) ,
+	.wav0_7       (wav0_7) ,
 	.wav1_0       (wav1_0) ,
 	.wav1_1       (wav1_1) ,
 	.wav1_2       (wav1_2) ,
 	.wav1_3       (wav1_3) ,
+	.wav1_4       (wav1_4) ,
+	.wav1_5       (wav1_5) ,
+	.wav1_6       (wav1_6) ,
+	.wav1_7       (wav1_7) ,
 	.wav2_0       (wav2_0) ,
 	.wav2_1       (wav2_1) ,
 	.wav2_2       (wav2_2) ,
 	.wav2_3       (wav2_3) ,
+	.wav2_4       (wav2_4) ,
+	.wav2_5       (wav2_5) ,
+	.wav2_6       (wav2_6) ,
+	.wav2_7       (wav2_7) ,
 	.wav3_0       (wav3_0) ,
 	.wav3_1       (wav3_1) ,
 	.wav3_2       (wav3_2) ,
-	.wav3_3       (wav3_3) 
+	.wav3_3       (wav3_3) ,
+	.wav3_4       (wav3_4) ,
+	.wav3_5       (wav3_5) ,
+	.wav3_6       (wav3_6) ,
+	.wav3_7       (wav3_7) ,
+	.wav4_0       (wav4_0) ,
+	.wav4_1       (wav4_1) ,
+	.wav4_2       (wav4_2) ,
+	.wav4_3       (wav4_3) ,
+	.wav4_4       (wav4_4) ,
+	.wav4_5       (wav4_5) ,
+	.wav4_6       (wav4_6) ,
+	.wav4_7       (wav4_7) ,
+	.wav5_0       (wav5_0) ,
+	.wav5_1       (wav5_1) ,
+	.wav5_2       (wav5_2) ,
+	.wav5_3       (wav5_3) ,
+	.wav5_4       (wav5_4) ,
+	.wav5_5       (wav5_5) ,
+	.wav5_6       (wav5_6) ,
+	.wav5_7       (wav5_7) ,
+	.wav6_0       (wav6_0) ,
+	.wav6_1       (wav6_1) ,
+	.wav6_2       (wav6_2) ,
+	.wav6_3       (wav6_3) ,
+	.wav6_4       (wav6_4) ,
+	.wav6_5       (wav6_5) ,
+	.wav6_6       (wav6_6) ,
+	.wav6_7       (wav6_7) ,
+	.wav7_0       (wav7_0) ,
+	.wav7_1       (wav7_1) ,
+	.wav7_2       (wav7_2) ,
+	.wav7_3       (wav7_3) ,
+	.wav7_4       (wav7_4) ,
+	.wav7_5       (wav7_5) ,
+	.wav7_6       (wav7_6) ,
+	.wav7_7       (wav7_7) 
 	);
 	endmodule

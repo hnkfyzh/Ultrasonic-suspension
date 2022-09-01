@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at pll_top.v(629): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at pll_top.v(631): always construct contains both blocking and non-blocking assignments

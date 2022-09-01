@@ -46,16 +46,15 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_24 -to clk
-set_location_assignment PIN_91 -to rst_n
-set_location_assignment PIN_72 -to led
-set_location_assignment PIN_33 -to uart_rx
-set_location_assignment IOBANK_1 -to wav2_3
+set_location_assignment PIN_89 -to rst_n
+set_location_assignment PIN_98 -to led
+set_location_assignment PIN_87 -to uart_rx
+set_location_assignment PIN_42 -to wav2_3
 set_global_assignment -name VERILOG_FILE ../Source/my_uart_tx.v
 set_global_assignment -name VERILOG_FILE ../Source/my_uart_rx.v
 set_global_assignment -name VERILOG_FILE ../Source/speed_setting.v
@@ -65,5 +64,77 @@ set_global_assignment -name VERILOG_FILE ../Sim/pll_top_tb.v
 set_global_assignment -name MIF_FILE ../Source/pwm.mif
 set_global_assignment -name QIP_FILE ../Source/pwm.qip
 set_global_assignment -name VERILOG_FILE ../Source/Switch_Ctrl.v
-set_location_assignment PIN_32 -to uart_tx
+set_location_assignment PIN_86 -to uart_tx
+set_location_assignment PIN_72 -to wav0_0
+set_location_assignment PIN_73 -to wav1_0
+set_location_assignment PIN_71 -to wav1_1
+set_location_assignment PIN_70 -to wav0_1
+set_location_assignment PIN_69 -to wav1_2
+set_location_assignment PIN_68 -to wav0_2
+set_location_assignment PIN_67 -to wav1_3
+set_location_assignment PIN_66 -to wav0_3
+set_location_assignment PIN_65 -to wav1_4
+set_location_assignment PIN_64 -to wav0_4
+set_location_assignment PIN_60 -to wav1_5
+set_location_assignment PIN_59 -to wav0_5
+set_location_assignment PIN_58 -to wav1_6
+set_location_assignment PIN_55 -to wav0_6
+set_location_assignment PIN_54 -to wav1_7
+set_location_assignment PIN_53 -to wav0_7
+set_location_assignment PIN_52 -to wav3_0
+set_location_assignment PIN_51 -to wav2_0
+set_location_assignment PIN_50 -to wav3_1
+set_location_assignment PIN_49 -to wav2_1
+set_location_assignment PIN_46 -to wav3_2
+set_location_assignment PIN_44 -to wav2_2
+set_location_assignment PIN_43 -to wav3_3
+set_location_assignment PIN_39 -to wav3_4
+set_location_assignment PIN_38 -to wav2_4
+set_location_assignment PIN_34 -to wav3_5
+set_location_assignment PIN_32 -to wav3_6
+set_location_assignment PIN_33 -to wav2_5
+set_location_assignment PIN_31 -to wav2_6
+set_location_assignment PIN_30 -to wav3_7
+set_location_assignment PIN_28 -to wav2_7
+set_location_assignment PIN_144 -to wav5_0
+set_location_assignment PIN_143 -to wav4_0
+set_location_assignment PIN_142 -to wav5_1
+set_location_assignment PIN_141 -to wav4_1
+set_location_assignment PIN_138 -to wav5_2
+set_location_assignment PIN_137 -to wav4_2
+set_location_assignment PIN_136 -to wav5_3
+set_location_assignment PIN_135 -to wav4_3
+set_location_assignment PIN_133 -to wav5_4
+set_location_assignment PIN_132 -to wav4_4
+set_location_assignment PIN_129 -to wav5_5
+set_location_assignment PIN_128 -to wav4_5
+set_location_assignment PIN_127 -to wav5_6
+set_location_assignment PIN_126 -to wav4_6
+set_location_assignment PIN_125 -to wav5_7
+set_location_assignment PIN_124 -to wav4_7
+set_location_assignment PIN_100 -to wav7_7
+set_location_assignment PIN_120 -to wav6_0
+set_location_assignment PIN_103 -to wav7_6
+set_location_assignment PIN_115 -to wav6_1
+set_location_assignment PIN_105 -to wav7_5
+set_location_assignment PIN_113 -to wav6_2
+set_location_assignment PIN_110 -to wav7_4
+set_location_assignment PIN_111 -to wav6_3
+set_location_assignment PIN_112 -to wav7_3
+set_location_assignment PIN_106 -to wav6_4
+set_location_assignment PIN_114 -to wav7_2
+set_location_assignment PIN_104 -to wav6_5
+set_location_assignment PIN_121 -to wav7_0
+set_location_assignment PIN_119 -to wav7_1
+set_location_assignment PIN_101 -to wav6_6
+set_location_assignment PIN_99 -to wav6_7
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_76 -to led_1
+set_location_assignment PIN_77 -to led_2
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -68,13 +68,14 @@ module pll_top(
 	 output      wav7_5    ,
 	 output      wav7_6    ,
 	 output      wav7_7    ,
-	 output   reg led      
+	 output  reg led_1     ,
+    output  reg led_2     	 
 	 
 	 );
 	 reg [9:0]   rom_addr[7:0][7:0];//循环读取地址0~1023
 	 reg [9:0]   addr[7:0][7:0]  ;
-	 reg [9:0]   delay ;//延时调节相位，数据由上位机通信发给FPGA，0~1023表示0~360度 
-	 reg   switch[4:0][4:0];//表示控制物体在哪一个位置，这个位置是1，其它都是0
+	 reg [9:0]   delay ;//延时调节相位，数据由上位机通信发给FPGA，0~1023表示0~360度，但串口发送的延时数据只能到255，相位分辨率为360/255
+	 reg   switch[4:0][4:0];//表示开启的左上角的那一个换能器
     wire  rom_data[7:0][7:0];//从相应地址位置读出的数据（波形）
 	 reg  wav[7:0][7:0];
 	 wire  clk_bps1;
@@ -159,14 +160,15 @@ integer      p ;
 reg [3:0] direction_x;
 reg [3:0] direction_y;
 initial begin
- for(m=0; m<=3; m=m+1) 
+ for(m=0; m<=7; m=m+1) 
     begin
-	      for(n=0; n<=3; n=n+1)
+	      for(n=0; n<=7; n=n+1)
 			   begin
 				  rom_addr[m][n] = 0;
 				  addr[m][n] = 0 ;
 				end
-			led = 1;
+			led_1 = 1;
+			led_2 = 0;
 	 end
  for(m=0; m<=4; m=m+1)
     begin
@@ -183,8 +185,8 @@ end
 always @(negedge clk_out)
 begin
 
-     for(q=0; q<=3; q=q+1) begin
-	      for(p=0; p<=3; p=p+1)
+     for(q=0; q<=7; q=q+1) begin
+	      for(p=0; p<=7; p=p+1)
 			   begin
 				rom_addr[q][p] = addr[q][p] + delay;
 				addr[q][p] = addr[q][p] + 1'b1;
@@ -208,28 +210,28 @@ begin
 							  wav[i][j] = rom_data[i][j];  //打开switch之后的4x4换能器
 							 end
 						end 
-					 for(i=0;i<m;i=i+1)
+						for(i=0;i<m;i=i+1)  //后面四个for循环为把除打开的换能器全部不给PWM波
 					   begin
 						  for(j=0;j<8;j=j+1)
 						    begin
 							  wav[i][j] = 0;  
 							 end
 						end 
-					 for(i=m+4;i<8;i=i+1)
+					   for(i=m+4;i<8;i=i+1)
 					   begin
 						  for(j=0;j<8;j=j+1)
 						    begin
 							  wav[i][j] = 0;  
 							 end
 						end
-					 for(j=0;j<n;j=j+1)
+					   for(j=0;j<n;j=j+1)
 					   begin
 						  for(i=0;i<8;i=i+1)
 						    begin
 							  wav[i][j] = 0;  
 							 end
 						end 
-					 for(j=n+4;j<8;j=j+1)
+					   for(j=n+4;j<8;j=j+1)
 					   begin
 						  for(i=0;i<8;i=i+1)
 						    begin
@@ -631,11 +633,11 @@ begin
  if(rxd_data == 8'hff && datanum == 0)//开始标志
  begin
      databag[0] <= rxd_data;
-	  led <= 0;
+	  led_1 <= 0;
 	  datanum <= datanum + 1;  
  end
  
- else if(datanum == 1)//向左/向右/向前/向后移动
+ else if(datanum == 1)//向左/向右/向前/向后/不移动
  begin
      databag[1] <= rxd_data;
 	  datanum <= datanum + 1;
@@ -654,21 +656,22 @@ begin
 	  if(databag[1] == 8'h44)    direction_x = direction_x + 1; //右
 	  if(databag[1] == 8'h53)    direction_y = direction_y + 1; //后
 	  if(databag[1] == 8'h57)    direction_y = direction_y - 1; //前
-	  switch[direction_x][direction_y] = 1;//中心换能器
+	  switch[direction_x][direction_y] = 1;//左上换能器
 	  for(e=0;e<=4;e=e+1)
 	  begin
 	     for(f=0;f<=4;f=f+1)
 		  begin
-		     if(e!=direction_x || f!=direction_y) switch[e][f] = 0;//其它的中心都置0，为的是只让有一个中心
+		     if(e!=direction_x || f!=direction_y) switch[e][f] = 0;//其它的switch都置0，为的是只让有一个为1
 		  end
 	  end
 	  delay <= 4*databag[2];//因为一个字节十六进制数只能表示到255，而设计的相位分辨是1024
 	  datanum <= 0;
+	  led_1 <= 1;
  end
  else 
  begin
-     datanum = 0;
-     led = 1;
+     datanum <= 0;
+     led_1 <= 1;
  end
  
 

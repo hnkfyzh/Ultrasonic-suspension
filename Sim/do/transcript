@@ -16,43 +16,70 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:11:38 on Feb 08,2022
+# Start time: 12:04:52 on Sep 01,2022
 # vlog -reportprogress 300 ../../Source/pll_top.v 
 # -- Compiling module pll_top
 # 
 # Top level modules:
 # 	pll_top
-# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# End time: 12:04:52 on Sep 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:11:38 on Feb 08,2022
+# Start time: 12:04:52 on Sep 01,2022
 # vlog -reportprogress 300 ../../Source/pwm.v 
 # -- Compiling module pwm
 # 
 # Top level modules:
 # 	pwm
-# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# End time: 12:04:53 on Sep 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:11:38 on Feb 08,2022
+# Start time: 12:04:53 on Sep 01,2022
 # vlog -reportprogress 300 ../../Project/PLL.v 
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# End time: 12:04:53 on Sep 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 20:11:38 on Feb 08,2022
+# Start time: 12:04:53 on Sep 01,2022
+# vlog -reportprogress 300 ../../Source/my_uart_rx.v 
+# -- Compiling module my_uart_rx
+# 
+# Top level modules:
+# 	my_uart_rx
+# End time: 12:04:53 on Sep 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 12:04:53 on Sep 01,2022
+# vlog -reportprogress 300 ../../Source/my_uart_tx.v 
+# -- Compiling module my_uart_tx
+# 
+# Top level modules:
+# 	my_uart_tx
+# End time: 12:04:53 on Sep 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 12:04:53 on Sep 01,2022
+# vlog -reportprogress 300 ../../Source/speed_setting.v 
+# -- Compiling module speed_setting
+# 
+# Top level modules:
+# 	speed_setting
+# End time: 12:04:53 on Sep 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 12:04:54 on Sep 01,2022
 # vlog -reportprogress 300 ../pll_top_tb.v 
 # -- Compiling module pll_top_tb
 # 
 # Top level modules:
 # 	pll_top_tb
-# End time: 20:11:38 on Feb 08,2022, Elapsed time: 0:00:00
+# End time: 12:04:54 on Sep 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -do "sim.do" 
-# Start time: 20:11:39 on Feb 08,2022
+# Start time: 12:04:54 on Sep 01,2022
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # Loading work.pll_top_tb
@@ -64,21 +91,30 @@
 # Loading work.pwm
 # Loading Altera_lib.altsyncram
 # Loading Altera_lib.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.speed_setting
+# Loading work.my_uart_rx
+# Loading work.my_uart_tx
 # Loading Altera_lib.MF_cycloneiii_pll
 # Loading Altera_lib.cda_m_cntr
 # Loading Altera_lib.cda_n_cntr
 # Loading Altera_lib.cda_scale_cntr
+# ** Warning: (vsim-3017) ../pll_top_tb.v(78): [TFMPC] - Too few port connections. Expected 70, found 67.
+#    Time: 0 ps  Iteration: 0  Instance: /pll_top_tb/Upll_top File: ../../Source/pll_top.v
+# ** Warning: (vsim-3722) ../pll_top_tb.v(78): [TFMPC] - Missing connection for port 'uart_rx'.
+# ** Warning: (vsim-3722) ../pll_top_tb.v(78): [TFMPC] - Missing connection for port 'uart_tx'.
+# ** Warning: (vsim-3722) ../pll_top_tb.v(78): [TFMPC] - Missing connection for port 'led'.
 # 1
 # 1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: 16339  Hostname: DESKTOP-H7HP38C  ProcessID: 11088
 # 
-#           Attempting to use alternate WLF file "./wlftw516tk".
+#           Attempting to use alternate WLF file "./wlftxesznx".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftw516tk
+#           Using alternate file: ./wlftxesznx
 # 
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 90000  Instance: pll_top_tb.Upll_top.UPLL.altpll_component.cycloneiii_pll.pll3
 add wave -position insertpoint sim:/pll_top_tb/Upll_top/*
+# Causality operation skipped due to absence of debug database file

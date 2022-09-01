@@ -7,85 +7,145 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/16339/Desktop/FPGALearning/PLL/Sim/do
+dC:/Users/16339/Desktop/FPGALearning/PLL/Sim/do
+vmy_uart_rx
+Z0 !s110 1662005093
+!i10b 1
+!s100 ;]4?GD2CP@nEe6oUgf1[T3
+I8TGZNIE?K3G3V`[L=eYHO0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/16339/Desktop/Ultrasonic suspension/Ultrasonic-suspension/Sim/do
+w1652926856
+8../../Source/my_uart_rx.v
+F../../Source/my_uart_rx.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1662005093.297000
+!s107 ../../Source/my_uart_rx.v|
+!s90 -reportprogress|300|../../Source/my_uart_rx.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vmy_uart_tx
+R0
+!i10b 1
+!s100 AiG[NUL<PRJoO0TdZH=k]1
+IYDzK43O<R89[V9Y?@Z2aV0
+R1
+R2
+w1652929457
+8../../Source/my_uart_tx.v
+F../../Source/my_uart_tx.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1662005093.628000
+!s107 ../../Source/my_uart_tx.v|
+!s90 -reportprogress|300|../../Source/my_uart_tx.v|
+!i113 1
+R4
 vPLL
-Z1 !s110 1644322298
+R0
 !i10b 1
 !s100 ?of1i:PUAhmOZj=Tb?Mom2
 Ic>Im>m;GaBIMlWMmT@_`g1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1643895306
+R1
+R2
+Z5 w1649993047
 8../../Project/PLL.v
 F../../Project/PLL.v
-Z3 L0 39
-Z4 OL;L;10.4;61
+Z6 L0 39
+R3
 r1
 !s85 0
 31
-!s108 1644322298.673000
+!s108 1662005093.151000
 !s107 ../../Project/PLL.v|
 !s90 -reportprogress|300|../../Project/PLL.v|
 !i113 1
-Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
 n@p@l@l
 vpll_top
-R1
+!s110 1662005092
 !i10b 1
-!s100 Ozj3j=3`CHK>ZeT^Ro=3>0
-I6E3SjQI:EVC:9>FDIWRW[1
+!s100 :[GIG6CQZ8ESllUj2?eJB2
+I3j:KN^@Keb`ie<_8;CdOV3
+R1
 R2
-R0
-w1644322273
+w1662005039
 8../../Source/pll_top.v
 F../../Source/pll_top.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-!s108 1644322298.299000
+!s108 1662005092.865000
 !s107 ../../Source/pll_top.v|
 !s90 -reportprogress|300|../../Source/pll_top.v|
 !i113 1
-R5
+R4
 vpll_top_tb
-R1
+!s110 1662005094
 !i10b 1
-!s100 J:2Snz`MH5`Z3MV7>0QAh1
-IA9XTV40N=gmSZGjkTATZU2
+!s100 lDMYoM_6MMW8hVVcZVY_V3
+IjR<F[O`f@A=ZzW`VZE8jn1
+R1
 R2
-R0
-w1644068318
+w1662000371
 8../pll_top_tb.v
 F../pll_top_tb.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-!s108 1644322298.868000
+!s108 1662005094.212000
 !s107 ../pll_top_tb.v|
 !s90 -reportprogress|300|../pll_top_tb.v|
 !i113 1
-R5
+R4
 vpwm
-R1
+R0
 !i10b 1
 !s100 _fGDl1BXJ4DnEElhh3J0@2
 IHBIOgSmQ3SEjkWl@0cGEI0
+R1
 R2
-R0
-w1643895662
+R5
 8../../Source/pwm.v
 F../../Source/pwm.v
+R6
 R3
-R4
 r1
 !s85 0
 31
-!s108 1644322298.482000
+!s108 1662005092.988000
 !s107 ../../Source/pwm.v|
 !s90 -reportprogress|300|../../Source/pwm.v|
 !i113 1
-R5
+R4
+vspeed_setting
+R0
+!i10b 1
+!s100 7zH5SBUA[T:WCAKi7Q6IN0
+I]J83<BmOndmzdD6cPGjOM3
+R1
+R2
+w1652926857
+8../../Source/speed_setting.v
+F../../Source/speed_setting.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1662005093.828000
+!s107 ../../Source/speed_setting.v|
+!s90 -reportprogress|300|../../Source/speed_setting.v|
+!i113 1
+R4

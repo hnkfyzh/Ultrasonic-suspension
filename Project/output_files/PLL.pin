@@ -70,15 +70,15 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 RESERVED_INPUT_WITH_WEAK_PULLUP : 1         :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 2         :        :                   :         : 1         :                
-wav2_3                       : 3         : output : 2.5 V             :         : 1         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 3         :        :                   :         : 1         :                
 GND                          : 4         : gnd    :                   :         :           :                
 VCCINT                       : 5         : power  :                   : 1.2V    :           :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 6         : input  : 2.5 V             :         : 1         : N              
-wav5_1                       : 7         : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 7         :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 8         : input  : 2.5 V             :         : 1         : N              
 nSTATUS                      : 9         :        :                   :         : 1         :                
-wav2_1                       : 10        : output : 2.5 V             :         : 1         : N              
-wav2_4                       : 11        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 10        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 11        :        :                   :         : 1         :                
 ~ALTERA_DCLK~                : 12        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 13        : input  : 2.5 V             :         : 1         : N              
 nCONFIG                      : 14        :        :                   :         : 1         :                
@@ -95,121 +95,121 @@ clk                          : 24        : input  : 2.5 V             :         
 GND+                         : 25        :        :                   :         : 2         :                
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
-wav0_3                       : 28        : output : 2.5 V             :         : 2         : N              
+wav2_7                       : 28        : output : 2.5 V             :         : 2         : Y              
 VCCINT                       : 29        : power  :                   : 1.2V    :           :                
-wav5_5                       : 30        : output : 2.5 V             :         : 2         : N              
-wav2_5                       : 31        : output : 2.5 V             :         : 2         : N              
-uart_tx                      : 32        : output : 2.5 V             :         : 2         : Y              
-uart_rx                      : 33        : input  : 2.5 V             :         : 2         : Y              
-wav5_2                       : 34        : output : 2.5 V             :         : 2         : N              
+wav3_7                       : 30        : output : 2.5 V             :         : 2         : Y              
+wav2_6                       : 31        : output : 2.5 V             :         : 2         : Y              
+wav3_6                       : 32        : output : 2.5 V             :         : 2         : Y              
+wav2_5                       : 33        : output : 2.5 V             :         : 2         : Y              
+wav3_5                       : 34        : output : 2.5 V             :         : 2         : Y              
 VCCA1                        : 35        : power  :                   : 2.5V    :           :                
 GNDA1                        : 36        : gnd    :                   :         :           :                
 VCCD_PLL1                    : 37        : power  :                   : 1.2V    :           :                
-wav1_1                       : 38        : output : 2.5 V             :         : 3         : N              
-wav3_5                       : 39        : output : 2.5 V             :         : 3         : N              
+wav2_4                       : 38        : output : 2.5 V             :         : 3         : Y              
+wav3_4                       : 39        : output : 2.5 V             :         : 3         : Y              
 VCCIO3                       : 40        : power  :                   : 2.5V    : 3         :                
 GND                          : 41        : gnd    :                   :         :           :                
-wav6_0                       : 42        : output : 2.5 V             :         : 3         : N              
-clk_out                      : 43        : output : 2.5 V             :         : 3         : N              
-wav3_1                       : 44        : output : 2.5 V             :         : 3         : N              
+wav2_3                       : 42        : output : 2.5 V             :         : 3         : Y              
+wav3_3                       : 43        : output : 2.5 V             :         : 3         : Y              
+wav2_2                       : 44        : output : 2.5 V             :         : 3         : Y              
 VCCINT                       : 45        : power  :                   : 1.2V    :           :                
-wav4_7                       : 46        : output : 2.5 V             :         : 3         : N              
+wav3_2                       : 46        : output : 2.5 V             :         : 3         : Y              
 VCCIO3                       : 47        : power  :                   : 2.5V    : 3         :                
 GND                          : 48        : gnd    :                   :         :           :                
-wav6_2                       : 49        : output : 2.5 V             :         : 3         : N              
-wav1_5                       : 50        : output : 2.5 V             :         : 3         : N              
-wav6_1                       : 51        : output : 2.5 V             :         : 3         : N              
-wav0_1                       : 52        : output : 2.5 V             :         : 3         : N              
-wav5_4                       : 53        : output : 2.5 V             :         : 3         : N              
-wav7_3                       : 54        : output : 2.5 V             :         : 4         : N              
-wav0_0                       : 55        : output : 2.5 V             :         : 4         : N              
+wav2_1                       : 49        : output : 2.5 V             :         : 3         : Y              
+wav3_1                       : 50        : output : 2.5 V             :         : 3         : Y              
+wav2_0                       : 51        : output : 2.5 V             :         : 3         : Y              
+wav3_0                       : 52        : output : 2.5 V             :         : 3         : Y              
+wav0_7                       : 53        : output : 2.5 V             :         : 3         : Y              
+wav1_7                       : 54        : output : 2.5 V             :         : 4         : Y              
+wav0_6                       : 55        : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : 56        : power  :                   : 2.5V    : 4         :                
 GND                          : 57        : gnd    :                   :         :           :                
-wav1_6                       : 58        : output : 2.5 V             :         : 4         : N              
-wav0_6                       : 59        : output : 2.5 V             :         : 4         : N              
-wav0_2                       : 60        : output : 2.5 V             :         : 4         : N              
+wav1_6                       : 58        : output : 2.5 V             :         : 4         : Y              
+wav0_5                       : 59        : output : 2.5 V             :         : 4         : Y              
+wav1_5                       : 60        : output : 2.5 V             :         : 4         : Y              
 VCCINT                       : 61        : power  :                   : 1.2V    :           :                
 VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
 GND                          : 63        : gnd    :                   :         :           :                
-wav5_7                       : 64        : output : 2.5 V             :         : 4         : N              
-wav5_6                       : 65        : output : 2.5 V             :         : 4         : N              
-wav7_2                       : 66        : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 67        :        :                   :         : 4         :                
-wav6_4                       : 68        : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 69        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 70        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 71        :        :                   :         : 4         :                
-led                          : 72        : output : 2.5 V             :         : 4         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 73        :        :                   :         : 5         :                
+wav0_4                       : 64        : output : 2.5 V             :         : 4         : Y              
+wav1_4                       : 65        : output : 2.5 V             :         : 4         : Y              
+wav0_3                       : 66        : output : 2.5 V             :         : 4         : Y              
+wav1_3                       : 67        : output : 2.5 V             :         : 4         : Y              
+wav0_2                       : 68        : output : 2.5 V             :         : 4         : Y              
+wav1_2                       : 69        : output : 2.5 V             :         : 4         : Y              
+wav0_1                       : 70        : output : 2.5 V             :         : 4         : Y              
+wav1_1                       : 71        : output : 2.5 V             :         : 4         : Y              
+wav0_0                       : 72        : output : 2.5 V             :         : 4         : Y              
+wav1_0                       : 73        : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 74        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 75        :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 76        :        :                   :         : 5         :                
-wav1_2                       : 77        : output : 2.5 V             :         : 5         : N              
+led_1                        : 76        : output : 2.5 V             :         : 5         : Y              
+led_2                        : 77        : output : 2.5 V             :         : 5         : Y              
 VCCINT                       : 78        : power  :                   : 1.2V    :           :                
 GND                          : 79        : gnd    :                   :         :           :                
-wav0_5                       : 80        : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 80        :        :                   :         : 5         :                
 VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
 GND                          : 82        : gnd    :                   :         :           :                
-wav7_7                       : 83        : output : 2.5 V             :         : 5         : N              
-wav0_4                       : 84        : output : 2.5 V             :         : 5         : N              
-wav7_0                       : 85        : output : 2.5 V             :         : 5         : N              
-wav4_1                       : 86        : output : 2.5 V             :         : 5         : N              
-wav4_4                       : 87        : output : 2.5 V             :         : 5         : N              
+clk_out                      : 83        : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : 85        :        :                   :         : 5         :                
+uart_tx                      : 86        : output : 2.5 V             :         : 5         : Y              
+uart_rx                      : 87        : input  : 2.5 V             :         : 5         : Y              
 GND+                         : 88        :        :                   :         : 5         :                
-GND+                         : 89        :        :                   :         : 5         :                
+rst_n                        : 89        : input  : 2.5 V             :         : 5         : Y              
 GND+                         : 90        :        :                   :         : 6         :                
-rst_n                        : 91        : input  : 2.5 V             :         : 6         : Y              
+GND+                         : 91        :        :                   :         : 6         :                
 CONF_DONE                    : 92        :        :                   :         : 6         :                
 VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
 MSEL0                        : 94        :        :                   :         : 6         :                
 GND                          : 95        : gnd    :                   :         :           :                
 MSEL1                        : 96        :        :                   :         : 6         :                
 MSEL2                        : 97        :        :                   :         : 6         :                
-wav7_6                       : 98        : output : 2.5 V             :         : 6         : N              
-wav3_4                       : 99        : output : 2.5 V             :         : 6         : N              
-wav7_4                       : 100       : output : 2.5 V             :         : 6         : N              
-~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 101       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
+wav6_7                       : 99        : output : 2.5 V             :         : 6         : Y              
+wav7_7                       : 100       : output : 2.5 V             :         : 6         : Y              
+wav6_6                       : 101       : output : 2.5 V             :         : 6         : Y              
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                
-wav0_7                       : 103       : output : 2.5 V             :         : 6         : N              
-wav1_3                       : 104       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 105       :        :                   :         : 6         :                
-wav1_7                       : 106       : output : 2.5 V             :         : 6         : N              
+wav7_6                       : 103       : output : 2.5 V             :         : 6         : Y              
+wav6_5                       : 104       : output : 2.5 V             :         : 6         : Y              
+wav7_5                       : 105       : output : 2.5 V             :         : 6         : Y              
+wav6_4                       : 106       : output : 2.5 V             :         : 6         : Y              
 VCCA2                        : 107       : power  :                   : 2.5V    :           :                
 GNDA2                        : 108       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 109       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 110       :        :                   :         : 7         :                
-wav2_7                       : 111       : output : 2.5 V             :         : 7         : N              
-wav3_7                       : 112       : output : 2.5 V             :         : 7         : N              
-wav4_6                       : 113       : output : 2.5 V             :         : 7         : N              
-wav5_3                       : 114       : output : 2.5 V             :         : 7         : N              
-wav5_0                       : 115       : output : 2.5 V             :         : 7         : N              
+wav7_4                       : 110       : output : 2.5 V             :         : 7         : Y              
+wav6_3                       : 111       : output : 2.5 V             :         : 7         : Y              
+wav7_3                       : 112       : output : 2.5 V             :         : 7         : Y              
+wav6_2                       : 113       : output : 2.5 V             :         : 7         : Y              
+wav7_2                       : 114       : output : 2.5 V             :         : 7         : Y              
+wav6_1                       : 115       : output : 2.5 V             :         : 7         : Y              
 VCCINT                       : 116       : power  :                   : 1.2V    :           :                
 VCCIO7                       : 117       : power  :                   : 2.5V    : 7         :                
 GND                          : 118       : gnd    :                   :         :           :                
-wav2_2                       : 119       : output : 2.5 V             :         : 7         : N              
-wav1_4                       : 120       : output : 2.5 V             :         : 7         : N              
-wav6_6                       : 121       : output : 2.5 V             :         : 7         : N              
+wav7_1                       : 119       : output : 2.5 V             :         : 7         : Y              
+wav6_0                       : 120       : output : 2.5 V             :         : 7         : Y              
+wav7_0                       : 121       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
 GND                          : 123       : gnd    :                   :         :           :                
-wav3_3                       : 124       : output : 2.5 V             :         : 7         : N              
-wav6_3                       : 125       : output : 2.5 V             :         : 7         : N              
-wav4_5                       : 126       : output : 2.5 V             :         : 7         : N              
-wav7_5                       : 127       : output : 2.5 V             :         : 7         : N              
-wav4_3                       : 128       : output : 2.5 V             :         : 8         : N              
-wav6_7                       : 129       : output : 2.5 V             :         : 8         : N              
+wav4_7                       : 124       : output : 2.5 V             :         : 7         : Y              
+wav5_7                       : 125       : output : 2.5 V             :         : 7         : Y              
+wav4_6                       : 126       : output : 2.5 V             :         : 7         : Y              
+wav5_6                       : 127       : output : 2.5 V             :         : 7         : Y              
+wav4_5                       : 128       : output : 2.5 V             :         : 8         : Y              
+wav5_5                       : 129       : output : 2.5 V             :         : 8         : Y              
 VCCIO8                       : 130       : power  :                   : 2.5V    : 8         :                
 GND                          : 131       : gnd    :                   :         :           :                
-wav3_0                       : 132       : output : 2.5 V             :         : 8         : N              
-wav7_1                       : 133       : output : 2.5 V             :         : 8         : N              
+wav4_4                       : 132       : output : 2.5 V             :         : 8         : Y              
+wav5_4                       : 133       : output : 2.5 V             :         : 8         : Y              
 VCCINT                       : 134       : power  :                   : 1.2V    :           :                
-wav4_2                       : 135       : output : 2.5 V             :         : 8         : N              
-wav3_6                       : 136       : output : 2.5 V             :         : 8         : N              
-wav2_6                       : 137       : output : 2.5 V             :         : 8         : N              
-wav6_5                       : 138       : output : 2.5 V             :         : 8         : N              
+wav4_3                       : 135       : output : 2.5 V             :         : 8         : Y              
+wav5_3                       : 136       : output : 2.5 V             :         : 8         : Y              
+wav4_2                       : 137       : output : 2.5 V             :         : 8         : Y              
+wav5_2                       : 138       : output : 2.5 V             :         : 8         : Y              
 VCCIO8                       : 139       : power  :                   : 2.5V    : 8         :                
 GND                          : 140       : gnd    :                   :         :           :                
-wav4_0                       : 141       : output : 2.5 V             :         : 8         : N              
-wav3_2                       : 142       : output : 2.5 V             :         : 8         : N              
-wav1_0                       : 143       : output : 2.5 V             :         : 8         : N              
-wav2_0                       : 144       : output : 2.5 V             :         : 8         : N              
+wav4_1                       : 141       : output : 2.5 V             :         : 8         : Y              
+wav5_1                       : 142       : output : 2.5 V             :         : 8         : Y              
+wav4_0                       : 143       : output : 2.5 V             :         : 8         : Y              
+wav5_0                       : 144       : output : 2.5 V             :         : 8         : Y              
 GND                          : EPAD      :        :                   :         :           :                

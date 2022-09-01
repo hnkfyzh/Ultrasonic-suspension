@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Aug 30 23:27:38 2022
+Fitter Status : Successful - Thu Sep 01 18:09:01 2022
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : PLL
 Top-level Entity Name : pll_top
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 541 / 6,272 ( 9 % )
-    Total combinational functions : 478 / 6,272 ( 8 % )
-    Dedicated logic registers : 217 / 6,272 ( 3 % )
-Total registers : 217
-Total pins : 70 / 92 ( 76 % )
+Total logic elements : 542 / 6,272 ( 9 % )
+    Total combinational functions : 475 / 6,272 ( 8 % )
+    Dedicated logic registers : 218 / 6,272 ( 3 % )
+Total registers : 218
+Total pins : 71 / 92 ( 77 % )
 Total virtual pins : 0
-Total memory bits : 16,480 / 276,480 ( 6 % )
+Total memory bits : 65,536 / 276,480 ( 24 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
 Total PLLs : 1 / 2 ( 50 % )

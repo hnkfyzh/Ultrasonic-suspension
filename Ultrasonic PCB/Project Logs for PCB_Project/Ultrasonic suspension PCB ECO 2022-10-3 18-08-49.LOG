@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=1_2V Pin=C18-2
+Removed Pin From Net: NetName=1_2V Pin=C19-2
+Removed Pin From Net: NetName=1_2V Pin=C20-2
+Removed Pin From Net: NetName=1_2V Pin=C21-2
+Removed Pin From Net: NetName=1_2V Pin=C22-2
+Removed Pin From Net: NetName=1_2V Pin=C23-2
+Removed Pin From Net: NetName=3_3V Pin=U1-5
+Removed Pin From Net: NetName=3_3V Pin=U1-29
+Removed Pin From Net: NetName=1_2V Pin=U1-37
+Removed Pin From Net: NetName=3_3V Pin=U1-45
+Removed Pin From Net: NetName=3_3V Pin=U1-61
+Removed Pin From Net: NetName=3_3V Pin=U1-78
+Removed Pin From Net: NetName=3_3V Pin=U1-102
+Removed Pin From Net: NetName=1_2V Pin=U1-109
+Removed Pin From Net: NetName=3_3V Pin=U1-116
+Removed Pin From Net: NetName=3_3V Pin=U1-134
+Removed Pin From Net: NetName=1_2V Pin=U5-2
+Removed Pin From Net: NetName=1_2V Pin=U5-2
+Change Component Designator: OldDesignator=5V_DC NewDesignator=P1
+Change Component Designator: OldDesignator=LED1 NewDesignator=D1
+Change Component Designator: OldDesignator=LED2 NewDesignator=D2
+Change Component Designator: OldDesignator=RX NewDesignator=D4
+Change Component Designator: OldDesignator=TX NewDesignator=D3
+Change component parameters: Designator = "R10" ("R10"); Footprint = "R 0603_M"; UniqueID = "\RWCOWVXM" ("\RWCOWVXM")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=1_2V New Net Name=3.3V
+Added Pin To Net: NetName=1.2V Pin=U1-5
+Added Pin To Net: NetName=1.2V Pin=U1-29
+Added Pin To Net: NetName=1.2V Pin=U1-45
+Added Pin To Net: NetName=1.2V Pin=U1-61
+Added Pin To Net: NetName=1.2V Pin=U1-78
+Added Pin To Net: NetName=1.2V Pin=U1-102
+Added Pin To Net: NetName=1.2V Pin=U1-116
+Added Pin To Net: NetName=1.2V Pin=U1-134
+Added Net: Name=1.2V
+Added Pin To Net: NetName=1_2V Pin=C18-2
+Added Pin To Net: NetName=1_2V Pin=C19-2
+Added Pin To Net: NetName=1_2V Pin=C20-2
+Added Pin To Net: NetName=1_2V Pin=C21-2
+Added Pin To Net: NetName=1_2V Pin=C22-2
+Added Pin To Net: NetName=1_2V Pin=C23-2
+Added Pin To Net: NetName=1_2V Pin=U1-37
+Added Pin To Net: NetName=1_2V Pin=U1-109
+Added Pin To Net: NetName=1_2V Pin=U5-2
+Added Pin To Net: NetName=1_2V Pin=U5-2
+Added Net: Name=1_2V
+Added Room: Name=Sheet1

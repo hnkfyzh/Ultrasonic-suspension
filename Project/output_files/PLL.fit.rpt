@@ -1,5 +1,5 @@
 Fitter report for PLL
-Thu Sep 01 18:09:01 2022
+Mon Oct 03 16:41:20 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -136,14 +136,14 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Sep 01 18:09:01 2022            ;
+; Fitter Status                      ; Successful - Mon Oct 03 16:41:20 2022            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; PLL                                              ;
 ; Top-level Entity Name              ; pll_top                                          ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE6E22C8                                      ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 542 / 6,272 ( 9 % )                              ;
+; Total logic elements               ; 541 / 6,272 ( 9 % )                              ;
 ;     Total combinational functions  ; 475 / 6,272 ( 8 % )                              ;
 ;     Dedicated logic registers      ; 218 / 6,272 ( 3 % )                              ;
 ; Total registers                    ; 218                                              ;
@@ -222,12 +222,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.82        ;
+; Average used               ; 1.63        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  27.3%      ;
+;     Processors 2-4         ;  20.8%      ;
 ;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -363,16 +363,16 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 542 / 6,272 ( 9 % )       ;
-;     -- Combinational with no register       ; 324                       ;
-;     -- Register only                        ; 67                        ;
-;     -- Combinational with a register        ; 151                       ;
+; Total logic elements                        ; 541 / 6,272 ( 9 % )       ;
+;     -- Combinational with no register       ; 323                       ;
+;     -- Register only                        ; 66                        ;
+;     -- Combinational with a register        ; 152                       ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
 ;     -- 4 input functions                    ; 323                       ;
 ;     -- 3 input functions                    ; 74                        ;
 ;     -- <=2 input functions                  ; 78                        ;
-;     -- Register only                        ; 67                        ;
+;     -- Register only                        ; 66                        ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
 ;     -- normal mode                          ; 430                       ;
@@ -382,7 +382,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ;     -- Dedicated logic registers            ; 218 / 6,272 ( 3 % )       ;
 ;     -- I/O registers                        ; 0 / 412 ( 0 % )           ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 40 / 392 ( 10 % )         ;
+; Total LABs:  partially or completely used   ; 37 / 392 ( 9 % )          ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 71 / 92 ( 77 % )          ;
 ;     -- Clock pins                           ; 2 / 3 ( 67 % )            ;
@@ -400,11 +400,11 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 2% / 2% / 2%              ;
-; Peak interconnect usage (total/H/V)         ; 8% / 8% / 9%              ;
+; Peak interconnect usage (total/H/V)         ; 7% / 7% / 7%              ;
 ; Maximum fan-out                             ; 93                        ;
 ; Highest non-global fan-out                  ; 64                        ;
-; Total fan-out                               ; 2757                      ;
-; Average fan-out                             ; 2.99                      ;
+; Total fan-out                               ; 2753                      ;
+; Average fan-out                             ; 3.00                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -417,16 +417,16 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 +---------------------------------------------+--------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                ; Low                            ;
 ;                                             ;                    ;                                ;
-; Total logic elements                        ; 542 / 6272 ( 9 % ) ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 324                ; 0                              ;
-;     -- Register only                        ; 67                 ; 0                              ;
-;     -- Combinational with a register        ; 151                ; 0                              ;
+; Total logic elements                        ; 541 / 6272 ( 9 % ) ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 323                ; 0                              ;
+;     -- Register only                        ; 66                 ; 0                              ;
+;     -- Combinational with a register        ; 152                ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Logic element usage by number of LUT inputs ;                    ;                                ;
 ;     -- 4 input functions                    ; 323                ; 0                              ;
 ;     -- 3 input functions                    ; 74                 ; 0                              ;
 ;     -- <=2 input functions                  ; 78                 ; 0                              ;
-;     -- Register only                        ; 67                 ; 0                              ;
+;     -- Register only                        ; 66                 ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Logic elements by mode                      ;                    ;                                ;
 ;     -- normal mode                          ; 430                ; 0                              ;
@@ -435,7 +435,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; Total registers                             ; 218                ; 0                              ;
 ;     -- Dedicated logic registers            ; 218 / 6272 ( 3 % ) ; 0 / 6272 ( 0 % )               ;
 ;                                             ;                    ;                                ;
-; Total LABs:  partially or completely used   ; 40 / 392 ( 10 % )  ; 0 / 392 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 37 / 392 ( 9 % )   ; 0 / 392 ( 0 % )                ;
 ;                                             ;                    ;                                ;
 ; Virtual pins                                ; 0                  ; 0                              ;
 ; I/O pins                                    ; 71                 ; 0                              ;
@@ -453,7 +453,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ;     -- Registered Output Connections        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Internal Connections                        ;                    ;                                ;
-;     -- Total Connections                    ; 2751               ; 100                            ;
+;     -- Total Connections                    ; 2747               ; 100                            ;
 ;     -- Registered Connections               ; 1203               ; 0                              ;
 ;                                             ;                    ;                                ;
 ; External Connections                        ;                    ;                                ;
@@ -497,7 +497,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; clk_out ; 83    ; 5        ; 34           ; 9            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; clk_out ; 98    ; 6        ; 34           ; 17           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; led_1   ; 76    ; 5        ; 34           ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; led_2   ; 77    ; 5        ; 34           ; 4            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; uart_tx ; 86    ; 5        ; 34           ; 9            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -560,7 +560,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; wav7_0  ; 121   ; 7        ; 23           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; wav7_1  ; 119   ; 7        ; 23           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; wav7_2  ; 114   ; 7        ; 28           ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; wav7_3  ; 112   ; 7        ; 28           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; wav7_3  ; 1     ; 1        ; 0            ; 23           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; wav7_4  ; 110   ; 7        ; 30           ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; wav7_5  ; 105   ; 6        ; 34           ; 19           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; wav7_6  ; 103   ; 6        ; 34           ; 18           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -587,6 +587,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; 96       ; MSEL1                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 97       ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 97       ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
+; 98       ; DIFFIO_R4n, INIT_DONE       ; Use as regular IO        ; clk_out                 ; Dual Purpose Pin          ;
 ; 99       ; DIFFIO_R4p, CRC_ERROR       ; Use as regular IO        ; wav6_7                  ; Dual Purpose Pin          ;
 ; 101      ; DIFFIO_R3n, nCEO            ; Use as programming pin   ; wav6_6                  ; Dual Purpose Pin          ;
 ; 103      ; DIFFIO_R3p, CLKUSR          ; Use as regular IO        ; wav7_6                  ; Dual Purpose Pin          ;
@@ -602,13 +603,13 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 +----------+-------------------+---------------+--------------+
 ; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
 +----------+-------------------+---------------+--------------+
-; 1        ; 4 / 11 ( 36 % )   ; 2.5V          ; --           ;
+; 1        ; 5 / 11 ( 45 % )   ; 2.5V          ; --           ;
 ; 2        ; 7 / 8 ( 88 % )    ; 2.5V          ; --           ;
 ; 3        ; 11 / 11 ( 100 % ) ; 2.5V          ; --           ;
 ; 4        ; 14 / 14 ( 100 % ) ; 2.5V          ; --           ;
-; 5        ; 7 / 13 ( 54 % )   ; 2.5V          ; --           ;
-; 6        ; 7 / 10 ( 70 % )   ; 2.5V          ; --           ;
-; 7        ; 13 / 13 ( 100 % ) ; 2.5V          ; --           ;
+; 5        ; 6 / 13 ( 46 % )   ; 2.5V          ; --           ;
+; 6        ; 8 / 10 ( 80 % )   ; 2.5V          ; --           ;
+; 7        ; 12 / 13 ( 92 % )  ; 2.5V          ; --           ;
 ; 8        ; 12 / 12 ( 100 % ) ; 2.5V          ; --           ;
 +----------+-------------------+---------------+--------------+
 
@@ -618,7 +619,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                            ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
-; 1        ; 0          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 1        ; 0          ; 1        ; wav7_3                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 2        ; 1          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 3        ; 2          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 4        ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -700,7 +701,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; 80       ; 113        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 81       ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; 82       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 83       ; 117        ; 5        ; clk_out                                                   ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 83       ; 117        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 84       ; 118        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 85       ; 119        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 86       ; 120        ; 5        ; uart_tx                                                   ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -716,7 +717,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; 96       ; 131        ; 6        ; ^MSEL1                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 97       ; 132        ; 6        ; ^MSEL2                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 97       ; 133        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; 98       ; 136        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 98       ; 136        ; 6        ; clk_out                                                   ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 99       ; 137        ; 6        ; wav6_7                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 100      ; 138        ; 6        ; wav7_7                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 101      ; 139        ; 6        ; wav6_6                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -730,7 +731,7 @@ The pin-out file can be found in C:/Users/16339/Desktop/Ultrasonic suspension/Ul
 ; 109      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 110      ; 152        ; 7        ; wav7_4                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 111      ; 154        ; 7        ; wav6_3                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 112      ; 155        ; 7        ; wav7_3                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 112      ; 155        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 113      ; 156        ; 7        ; wav6_2                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 114      ; 157        ; 7        ; wav7_2                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 115      ; 158        ; 7        ; wav6_1                                                    ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -823,12 +824,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                 ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------+--------------+
-; |pll_top                                  ; 542 (432)   ; 218 (144)                 ; 0 (0)         ; 65536       ; 8    ; 0            ; 0       ; 0         ; 71   ; 0            ; 324 (288)    ; 67 (57)           ; 151 (92)         ; |pll_top                                                                            ; work         ;
+; |pll_top                                  ; 541 (432)   ; 218 (144)                 ; 0 (0)         ; 65536       ; 8    ; 0            ; 0       ; 0         ; 71   ; 0            ; 323 (286)    ; 66 (57)           ; 152 (94)         ; |pll_top                                                                            ; work         ;
 ;    |PLL:UPLL|                             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|PLL:UPLL                                                                   ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|PLL:UPLL|altpll:altpll_component                                           ; work         ;
 ;          |PLL_altpll:auto_generated|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated                 ; work         ;
-;    |my_uart_rx:Umy_uart_rx|               ; 39 (39)     ; 26 (26)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 7 (7)             ; 19 (19)          ; |pll_top|my_uart_rx:Umy_uart_rx                                                     ; work         ;
-;    |my_uart_tx:Umy_uart_tx|               ; 21 (21)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 3 (3)             ; 11 (11)          ; |pll_top|my_uart_tx:Umy_uart_tx                                                     ; work         ;
+;    |my_uart_rx:Umy_uart_rx|               ; 39 (39)     ; 26 (26)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 5 (5)             ; 21 (21)          ; |pll_top|my_uart_rx:Umy_uart_rx                                                     ; work         ;
+;    |my_uart_tx:Umy_uart_tx|               ; 22 (22)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 10 (10)          ; |pll_top|my_uart_tx:Umy_uart_tx                                                     ; work         ;
 ;    |pwm:Uwav0_0|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|pwm:Uwav0_0                                                                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|pwm:Uwav0_0|altsyncram:altsyncram_component                                ; work         ;
 ;          |altsyncram_0191:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pll_top|pwm:Uwav0_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated ; work         ;
@@ -1114,6 +1115,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk                                             ;                   ;         ;
 ; rst_n                                           ;                   ;         ;
 ; uart_rx                                         ;                   ;         ;
+;      - my_uart_rx:Umy_uart_rx|uart_rx0          ; 1                 ; 6       ;
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[5]~0 ; 1                 ; 6       ;
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[4]~1 ; 1                 ; 6       ;
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[3]~2 ; 1                 ; 6       ;
@@ -1122,7 +1124,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[7]~5 ; 1                 ; 6       ;
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[6]~6 ; 1                 ; 6       ;
 ;      - my_uart_rx:Umy_uart_rx|rx_temp_data[1]~7 ; 1                 ; 6       ;
-;      - my_uart_rx:Umy_uart_rx|uart_rx0~feeder   ; 1                 ; 6       ;
 +-------------------------------------------------+-------------------+---------+
 
 
@@ -1131,20 +1132,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                        ; Location           ; Fan-Out ; Usage                    ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
-; Equal2~0                                                                    ; LCCOMB_X25_Y4_N8   ; 9       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; Equal3~0                                                                    ; LCCOMB_X25_Y4_N2   ; 9       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; Equal2~0                                                                    ; LCCOMB_X29_Y8_N26  ; 9       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; Equal3~0                                                                    ; LCCOMB_X29_Y8_N24  ; 9       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1              ; 93      ; Clock                    ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; always3~5                                                                   ; LCCOMB_X24_Y5_N12  ; 41      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; always3~5                                                                   ; LCCOMB_X22_Y8_N24  ; 41      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                         ; PIN_24             ; 2       ; Clock                    ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                         ; PIN_24             ; 74      ; Clock                    ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; my_uart_rx:Umy_uart_rx|rx_data[0]~0                                         ; LCCOMB_X30_Y10_N16 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X30_Y10_N11     ; 11      ; Clock enable, Sync. load ; no     ; --                   ; --               ; --                        ;
-; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X30_Y10_N11     ; 60      ; Clock                    ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; my_uart_rx:Umy_uart_rx|rx_data[0]~0                                         ; LCCOMB_X29_Y12_N14 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X29_Y12_N31     ; 11      ; Clock enable, Sync. load ; no     ; --                   ; --               ; --                        ;
+; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X29_Y12_N31     ; 60      ; Clock                    ; yes    ; Global Clock         ; GCLK7            ; --                        ;
 ; rst_n                                                                       ; PIN_89             ; 74      ; Async. clear             ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; speed_setting:Uspeed_rx|always0~0                                           ; LCCOMB_X30_Y9_N6   ; 16      ; Sync. clear              ; no     ; --                   ; --               ; --                        ;
-; speed_setting:Uspeed_tx|always0~0                                           ; LCCOMB_X31_Y10_N16 ; 16      ; Sync. clear              ; no     ; --                   ; --               ; --                        ;
-; switch[4][3]                                                                ; FF_X24_Y5_N11      ; 59      ; Sync. load               ; no     ; --                   ; --               ; --                        ;
-; switch[4][4]                                                                ; FF_X25_Y5_N11      ; 64      ; Sync. clear, Sync. load  ; no     ; --                   ; --               ; --                        ;
+; speed_setting:Uspeed_rx|always0~0                                           ; LCCOMB_X25_Y6_N16  ; 16      ; Sync. clear              ; no     ; --                   ; --               ; --                        ;
+; speed_setting:Uspeed_tx|always0~0                                           ; LCCOMB_X30_Y9_N6   ; 16      ; Sync. clear              ; no     ; --                   ; --               ; --                        ;
+; switch[4][3]                                                                ; FF_X22_Y8_N15      ; 59      ; Sync. load               ; no     ; --                   ; --               ; --                        ;
+; switch[4][4]                                                                ; FF_X23_Y8_N1       ; 64      ; Sync. clear, Sync. load  ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1153,9 +1154,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                        ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1          ; 93      ; 64                                   ; Global Clock         ; GCLK3            ; --                        ;
+; PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1          ; 93      ; 63                                   ; Global Clock         ; GCLK3            ; --                        ;
 ; clk                                                                         ; PIN_24         ; 74      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X30_Y10_N11 ; 60      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; my_uart_rx:Umy_uart_rx|rx_rdy                                               ; FF_X29_Y12_N31 ; 60      ; 13                                   ; Global Clock         ; GCLK7            ; --                        ;
 ; rst_n                                                                       ; PIN_89         ; 74      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
 +-----------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -1978,51 +1979,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+---------------+----------------------+-----------------+-----------------+
 ; Name                                                                                  ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF     ; Location      ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+---------------+----------------------+-----------------+-----------------+
-; pwm:Uwav0_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav0_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav1_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav2_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav3_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav4_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav5_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav5_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav5_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav5_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav5_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav0_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav1_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav2_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y3_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav3_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y7_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav4_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav5_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav5_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav5_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav5_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav5_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y6_N0 ; Don't care           ; Old data        ; Old data        ;
 ; pwm:Uwav5_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
 ; pwm:Uwav5_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
 ; pwm:Uwav5_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
@@ -2032,16 +2033,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pwm:Uwav6_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
 ; pwm:Uwav6_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
 ; pwm:Uwav6_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y4_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav6_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav6_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y9_N0 ; Don't care           ; Old data        ; Old data        ;
-; pwm:Uwav7_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y8_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav6_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav6_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_0|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_1|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_2|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_3|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_4|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_5|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_6|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X27_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
+; pwm:Uwav7_7|altsyncram:altsyncram_component|altsyncram_0191:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 1            ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 1024 ; 1024                        ; 1                           ; --                          ; --                          ; 1024                ; 1    ; pwm.mif ; M9K_X15_Y5_N0 ; Don't care           ; Old data        ; Old data        ;
 +---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+---------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -10755,93 +10756,93 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 974 / 32,401 ( 3 % )   ;
-; C16 interconnects           ; 41 / 1,326 ( 3 % )     ;
-; C4 interconnects            ; 569 / 21,816 ( 3 % )   ;
-; Direct links                ; 129 / 32,401 ( < 1 % ) ;
+; Block interconnects         ; 970 / 32,401 ( 3 % )   ;
+; C16 interconnects           ; 35 / 1,326 ( 3 % )     ;
+; C4 interconnects            ; 516 / 21,816 ( 2 % )   ;
+; Direct links                ; 106 / 32,401 ( < 1 % ) ;
 ; Global clocks               ; 4 / 10 ( 40 % )        ;
-; Local interconnects         ; 404 / 10,320 ( 4 % )   ;
-; R24 interconnects           ; 31 / 1,289 ( 2 % )     ;
-; R4 interconnects            ; 674 / 28,186 ( 2 % )   ;
+; Local interconnects         ; 406 / 10,320 ( 4 % )   ;
+; R24 interconnects           ; 30 / 1,289 ( 2 % )     ;
+; R4 interconnects            ; 686 / 28,186 ( 2 % )   ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.55) ; Number of LABs  (Total = 40) ;
+; Number of Logic Elements  (Average = 14.62) ; Number of LABs  (Total = 37) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 1                            ;
-; 4                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
+; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 2                            ;
-; 12                                          ; 3                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 4                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 3                            ;
+; 12                                          ; 2                            ;
+; 13                                          ; 2                            ;
+; 14                                          ; 6                            ;
 ; 15                                          ; 4                            ;
-; 16                                          ; 21                           ;
+; 16                                          ; 19                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.45) ; Number of LABs  (Total = 40) ;
+; LAB-wide Signals  (Average = 2.62) ; Number of LABs  (Total = 37) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 9                            ;
-; 1 Clock                            ; 37                           ;
+; 1 Clock                            ; 33                           ;
 ; 1 Clock enable                     ; 8                            ;
 ; 1 Sync. clear                      ; 19                           ;
-; 1 Sync. load                       ; 21                           ;
+; 1 Sync. load                       ; 22                           ;
 ; 2 Clock enables                    ; 2                            ;
-; 2 Clocks                           ; 2                            ;
+; 2 Clocks                           ; 4                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.95) ; Number of LABs  (Total = 40) ;
+; Number of Signals Sourced  (Average = 20.38) ; Number of LABs  (Total = 37) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 1                            ;
-; 4                                            ; 1                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 2                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 2                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 2                            ;
+; 12                                           ; 2                            ;
+; 13                                           ; 2                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 0                            ;
 ; 16                                           ; 2                            ;
-; 17                                           ; 3                            ;
-; 18                                           ; 5                            ;
+; 17                                           ; 4                            ;
+; 18                                           ; 4                            ;
 ; 19                                           ; 3                            ;
-; 20                                           ; 5                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 2                            ;
+; 20                                           ; 4                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 2                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 2                            ;
-; 26                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 4                            ;
+; 26                                           ; 1                            ;
 ; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
 ; 29                                           ; 0                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 1                            ;
+; 30                                           ; 2                            ;
+; 31                                           ; 0                            ;
 ; 32                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
@@ -10849,25 +10850,25 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.78) ; Number of LABs  (Total = 40) ;
+; Number of Signals Sourced Out  (Average = 8.14) ; Number of LABs  (Total = 37) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 2                            ;
-; 2                                               ; 3                            ;
+; 1                                               ; 0                            ;
+; 2                                               ; 0                            ;
 ; 3                                               ; 5                            ;
-; 4                                               ; 0                            ;
+; 4                                               ; 4                            ;
 ; 5                                               ; 6                            ;
-; 6                                               ; 4                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 5                            ;
-; 9                                               ; 0                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 4                            ;
+; 9                                               ; 1                            ;
 ; 10                                              ; 4                            ;
 ; 11                                              ; 2                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 1                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 0                            ;
 ; 14                                              ; 0                            ;
-; 15                                              ; 2                            ;
-; 16                                              ; 2                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 3                            ;
 ; 17                                              ; 0                            ;
 ; 18                                              ; 1                            ;
 ; 19                                              ; 0                            ;
@@ -10878,42 +10879,43 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 18.85) ; Number of LABs  (Total = 40) ;
+; Number of Distinct Inputs  (Average = 20.05) ; Number of LABs  (Total = 37) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 1                            ;
+; 3                                            ; 2                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 1                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 1                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
 ; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 4                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 2                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 4                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 3                            ;
-; 24                                           ; 3                            ;
-; 25                                           ; 4                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 2                            ;
-; 29                                           ; 2                            ;
-; 30                                           ; 1                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 4                            ;
+; 27                                           ; 3                            ;
+; 28                                           ; 1                            ;
+; 29                                           ; 3                            ;
+; 30                                           ; 0                            ;
 ; 31                                           ; 1                            ;
-; 32                                           ; 1                            ;
-; 33                                           ; 1                            ;
+; 32                                           ; 0                            ;
+; 33                                           ; 0                            ;
+; 34                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -11094,7 +11096,7 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; clk                  ; 7.2               ;
+; clk             ; clk                  ; 6.2               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -11105,15 +11107,15 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------+-------------------------------+-------------------+
 ; Source Register                 ; Destination Register          ; Delay Added in ns ;
 +---------------------------------+-------------------------------+-------------------+
-; my_uart_rx:Umy_uart_rx|rx_rdy   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 2.216             ;
-; my_uart_rx:Umy_uart_rx|uart_rx2 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|uart_rx3 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|uart_rx0 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|uart_rx1 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|num[3]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|num[2]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|num[0]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
-; my_uart_rx:Umy_uart_rx|num[1]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.108             ;
+; my_uart_rx:Umy_uart_rx|rx_rdy   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 2.224             ;
+; my_uart_rx:Umy_uart_rx|uart_rx2 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|uart_rx3 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|uart_rx0 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|uart_rx1 ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|num[3]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|num[2]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|num[0]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
+; my_uart_rx:Umy_uart_rx|num[1]   ; my_uart_rx:Umy_uart_rx|rx_rdy ; 1.112             ;
 +---------------------------------+-------------------------------+-------------------+
 Note: This table only shows the top 9 path(s) that have the largest delay added for hold.
 
@@ -11174,42 +11176,42 @@ Info (176214): Statistics of I/O pins that need to be placed that use the same V
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
-        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  7 pins available
+        Info (176213): I/O bank number 1 does not use VREF pins and has 2.5V VCCIO pins. 5 total pin(s) used --  6 pins available
         Info (176213): I/O bank number 2 does not use VREF pins and has 2.5V VCCIO pins. 7 total pin(s) used --  1 pins available
         Info (176213): I/O bank number 3 does not use VREF pins and has 2.5V VCCIO pins. 11 total pin(s) used --  0 pins available
         Info (176213): I/O bank number 4 does not use VREF pins and has 2.5V VCCIO pins. 14 total pin(s) used --  0 pins available
         Info (176213): I/O bank number 5 does not use VREF pins and has 2.5V VCCIO pins. 6 total pin(s) used --  7 pins available
         Info (176213): I/O bank number 6 does not use VREF pins and has 2.5V VCCIO pins. 7 total pin(s) used --  3 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 13 total pin(s) used --  0 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 12 total pin(s) used --  1 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has 2.5V VCCIO pins. 12 total pin(s) used --  0 pins available
 Warning (15064): PLL "PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated|pll1" output port clk[0] feeds output pin "clk_out~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "led" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X23_Y0 to location X34_Y11
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X23_Y0 to location X34_Y11
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 1.00 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.00 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/16339/Desktop/Ultrasonic suspension/Ultrasonic-suspension/Project/output_files/PLL.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5315 megabytes
-    Info: Processing ended: Thu Sep 01 18:09:02 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 5317 megabytes
+    Info: Processing ended: Mon Oct 03 16:41:23 2022
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +----------------------------+

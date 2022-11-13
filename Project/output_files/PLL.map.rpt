@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PLL
-Mon Oct 03 16:40:50 2022
+Thu Nov 03 10:44:59 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -180,15 +180,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 03 16:40:50 2022            ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 03 10:44:59 2022            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; PLL                                              ;
 ; Top-level Entity Name              ; pll_top                                          ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 521                                              ;
-;     Total combinational functions  ; 475                                              ;
-;     Dedicated logic registers      ; 218                                              ;
-; Total registers                    ; 218                                              ;
+; Total logic elements               ; 269                                              ;
+;     Total combinational functions  ; 223                                              ;
+;     Dedicated logic registers      ; 194                                              ;
+; Total registers                    ; 194                                              ;
 ; Total pins                         ; 71                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 65,536                                           ;
@@ -293,11 +293,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -335,20 +336,20 @@ applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                       ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 521                                                                         ;
+; Estimated Total logic elements              ; 269                                                                         ;
 ;                                             ;                                                                             ;
-; Total combinational functions               ; 475                                                                         ;
+; Total combinational functions               ; 223                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 323                                                                         ;
-;     -- 3 input functions                    ; 74                                                                          ;
-;     -- <=2 input functions                  ; 78                                                                          ;
+;     -- 4 input functions                    ; 124                                                                         ;
+;     -- 3 input functions                    ; 36                                                                          ;
+;     -- <=2 input functions                  ; 63                                                                          ;
 ;                                             ;                                                                             ;
 ; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 430                                                                         ;
+;     -- normal mode                          ; 178                                                                         ;
 ;     -- arithmetic mode                      ; 45                                                                          ;
 ;                                             ;                                                                             ;
-; Total registers                             ; 218                                                                         ;
-;     -- Dedicated logic registers            ; 218                                                                         ;
+; Total registers                             ; 194                                                                         ;
+;     -- Dedicated logic registers            ; 194                                                                         ;
 ;     -- I/O registers                        ; 0                                                                           ;
 ;                                             ;                                                                             ;
 ; I/O pins                                    ; 71                                                                          ;
@@ -359,8 +360,8 @@ applicable agreement for further details.
 ;                                             ;                                                                             ;
 ; Maximum fan-out node                        ; PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 150                                                                         ;
-; Total fan-out                               ; 3300                                                                        ;
-; Average fan-out                             ; 3.67                                                                        ;
+; Total fan-out                               ; 2218                                                                        ;
+; Average fan-out                             ; 3.55                                                                        ;
 +---------------------------------------------+-----------------------------------------------------------------------------+
 
 
@@ -369,7 +370,7 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
-; |pll_top                                  ; 475 (380)         ; 218 (144)    ; 65536       ; 0            ; 0       ; 0         ; 71   ; 0            ; |pll_top                                                                            ; work         ;
+; |pll_top                                  ; 223 (128)         ; 194 (120)    ; 65536       ; 0            ; 0       ; 0         ; 71   ; 0            ; |pll_top                                                                            ; work         ;
 ;    |PLL:UPLL|                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pll_top|PLL:UPLL                                                                   ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pll_top|PLL:UPLL|altpll:altpll_component                                           ; work         ;
 ;          |PLL_altpll:auto_generated|      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pll_top|PLL:UPLL|altpll:altpll_component|PLL_altpll:auto_generated                 ; work         ;
@@ -1996,12 +1997,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 218   ;
-; Number of registers using Synchronous Clear  ; 80    ;
-; Number of registers using Synchronous Load   ; 65    ;
+; Total registers                              ; 194   ;
+; Number of registers using Synchronous Clear  ; 72    ;
+; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 74    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Clock Enable       ; 112   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -2012,11 +2013,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; my_uart_tx:Umy_uart_tx|uart_tx_r       ; 2       ;
-; led_1~reg0                             ; 2       ;
-; switch[2][2]                           ; 9       ;
-; direction_x[1]                         ; 6       ;
-; direction_y[1]                         ; 4       ;
-; Total number of inverted registers = 5 ;         ;
+; direction_y[1]                         ; 37      ;
+; direction_x[1]                         ; 23      ;
+; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
 
@@ -2025,9 +2024,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|my_uart_tx:Umy_uart_tx|num[1] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|my_uart_rx:Umy_uart_rx|num[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|datanum[2]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|my_uart_tx:Umy_uart_tx|num[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|my_uart_rx:Umy_uart_rx|num[2] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pll_top|datanum[3]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -7639,7 +7638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -7649,7 +7648,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Oct 03 16:40:35 2022
+    Info: Processing started: Thu Nov 03 10:44:53 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PLL -c PLL
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /users/16339/desktop/ultrasonic suspension/ultrasonic-suspension/source/my_uart_tx.v
@@ -7667,17 +7666,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/16339/desktop/ultrasonic suspension/ultrasonic-suspension/source/pwm.v
     Info (12023): Found entity 1: pwm
 Info (12021): Found 0 design units, including 0 entities, in source file /users/16339/desktop/ultrasonic suspension/ultrasonic-suspension/source/switch_ctrl.v
-Warning (10236): Verilog HDL Implicit Net warning at pll_top.v(596): created implicit net for "bps_start1"
-Warning (10236): Verilog HDL Implicit Net warning at pll_top.v(613): created implicit net for "bps_start2"
+Warning (10236): Verilog HDL Implicit Net warning at pll_top.v(614): created implicit net for "bps_start1"
+Warning (10236): Verilog HDL Implicit Net warning at pll_top.v(631): created implicit net for "bps_start2"
 Info (12127): Elaborating entity "pll_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at pll_top.v(637): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(643): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(649): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(655): truncated value with size 32 to match size of target (4)
+Warning (10036): Verilog HDL or VHDL warning at pll_top.v(79): object "switch" assigned a value but never read
 Warning (10230): Verilog HDL assignment warning at pll_top.v(656): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(657): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(658): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at pll_top.v(667): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(662): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(668): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(676): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(681): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(686): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(691): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at pll_top.v(702): truncated value with size 32 to match size of target (10)
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "rom_addr" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "addr" into its bus
 Info (12128): Elaborating entity "PLL" for hierarchy "PLL:UPLL"
@@ -7768,23 +7768,21 @@ Info (12128): Elaborating entity "my_uart_rx" for hierarchy "my_uart_rx:Umy_uart
 Info (12128): Elaborating entity "my_uart_tx" for hierarchy "my_uart_tx:Umy_uart_tx"
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "led_2" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/16339/Desktop/Ultrasonic suspension/Ultrasonic-suspension/Project/output_files/PLL.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 665 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 405 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 68 output pins
-    Info (21061): Implemented 529 logic cells
+    Info (21061): Implemented 269 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4639 megabytes
-    Info: Processing ended: Mon Oct 03 16:40:51 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4646 megabytes
+    Info: Processing ended: Thu Nov 03 10:45:00 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +------------------------------------------+

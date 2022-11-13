@@ -120,7 +120,7 @@ set_location_assignment PIN_105 -to wav7_5
 set_location_assignment PIN_113 -to wav6_2
 set_location_assignment PIN_110 -to wav7_4
 set_location_assignment PIN_111 -to wav6_3
-set_location_assignment PIN_1 -to wav7_3
+set_location_assignment PIN_112 -to wav7_3
 set_location_assignment PIN_106 -to wav6_4
 set_location_assignment PIN_114 -to wav7_2
 set_location_assignment PIN_104 -to wav6_5

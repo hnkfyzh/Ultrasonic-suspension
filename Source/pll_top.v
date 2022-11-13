@@ -69,7 +69,8 @@ module pll_top(
 	 output      wav7_6    ,
 	 output      wav7_7    ,
 	 output  reg led_1     ,
-    output  reg led_2     	 
+    output  reg led_2     
+
 	 
 	 );
 	 reg [9:0]   rom_addr[7:0][7:0];//循环读取地址0~1023
@@ -89,7 +90,7 @@ assign wav0_0=wav[0][0]     ;//将波形输出与数据连接
 assign wav0_1=wav[0][1]     ; 
 assign wav0_2=wav[0][2]     ;
 assign wav0_3=wav[0][3]     ;
-assign wav0_4=wav[0][4]     ;//将波形输出与数据连接
+assign wav0_4=wav[0][4]     ;
 assign wav0_5=wav[0][5]     ; 
 assign wav0_6=wav[0][6]     ;
 assign wav0_7=wav[0][7]     ;
@@ -167,7 +168,7 @@ initial begin
 				  rom_addr[m][n] = 0;
 				  addr[m][n] = 0 ;
 				end
-			led_1 = 1;
+			led_1 = 0;
 			led_2 = 0;
 	 end
  for(m=0; m<=4; m=m+1)
@@ -195,17 +196,24 @@ begin
 	 
 end //本循环程序的作用是扫描所有波形输出口，将延时加进去
 
-always @(negedge clk_out)
+always @(negedge clk_out)//
 begin
  for(m=0; m<=4; m=m+1)
     begin
 	      for(n=0; n<=4; n=n+1)
 			   begin
-              if(switch[m][n] == 1)
+              if((m == direction_x) && (n == direction_y))//这样做可以保证打开的只有一个
 				  begin
 				    for(i=m;i<=m+3;i=i+1)
 					   begin
 						  for(j=n;j<=n+3;j=j+1)
+						    begin
+							  wav[i][j] = rom_data[i][j];  //打开switch之后的4x4换能器
+							 end
+						end 
+				  	  for(i=0;i<=7;i=i+1)
+					   begin
+						  for(j=0;j<=7;j=j+1)
 						    begin
 							  wav[i][j] = rom_data[i][j];  //打开switch之后的4x4换能器
 							 end
@@ -239,8 +247,18 @@ begin
 							 end
 						end 
 				  end
+				  else ;
 				end
     end 
+
+//      for(m=0;m<=7;m=m+1)
+//		begin
+//		   for(n=0;n<=7;n=n+1)
+//			begin
+//			 wav[i][j] = rom_data[i][j];//全输出波形
+//			end
+//	   end
+
 end //本循环程序的作用是扫描所有小物体能在的地方，找到那个为1地址，把它之后的4x4换能器全换成开启状态,其它的都变成关闭状态
 
 always @(negedge clk_out)
@@ -618,8 +636,8 @@ my_uart_tx Umy_uart_tx(
 	.clk		(clk			),//25MHz主时钟
 	.rst_n		(rst_n			),//低电平复位信号
 	.clk_bps	(clk_bps2		),//clk_bps_r高电平为接收数据位的中间采样点,同时也作为发送数据的数据改变点
-	.rx_data	(rxd_data		),//接收数据寄存器
-	.rx_int		(rxd_data_rdy	),//接收数据中断信号,接收到数据期间始终为高电平,在该模块中利用它的下降沿来启动串口发送数据
+	.rx_data	(rxd_data		),//接收数据寄存器，改变来发送数据
+	.rx_int		(rxd_data_rdy	),//接收数据中断信号,接收到数据期间始终为高电平,在该模块中利用它的下降沿来启动串口发送数据，这里可以操作，换触发方式
 	.uart_tx	(uart_tx		),// RS232发送数据信号
 	.bps_start	(bps_start2		),//接收或者要发送数据，波特率时钟启动信号置位
 	.byte_end   (				)
@@ -630,10 +648,11 @@ reg [7:0] direction;//8'h41对应字母‘A’向左移动，8'h44对应字母�
 integer e,f;
 always@(posedge rxd_data_rdy)//表示已经接收到了一个数据，触发信号，必须要保证上一个数据接收并运行完之后，下一个数据才过来
 begin
+
  if(rxd_data == 8'hff && datanum == 0)//开始标志
  begin
      databag[0] <= rxd_data;
-	  led_1 <= 0;
+	  led_1 <= 1;
 	  datanum <= datanum + 1;  
  end
  
@@ -652,11 +671,27 @@ begin
  else if(rxd_data == 8'h3c && datanum == 3)//结束标志
  begin
      databag[3] <= rxd_data;
-     if(databag[1] == 8'h41)    direction_x = direction_x - 1; //左
-	  if(databag[1] == 8'h44)    direction_x = direction_x + 1; //右
-	  if(databag[1] == 8'h53)    direction_y = direction_y + 1; //后
-	  if(databag[1] == 8'h57)    direction_y = direction_y - 1; //前
-	  switch[direction_x][direction_y] = 1;//左上换能器
+     if(databag[1] == 8'h41)
+     begin	  
+	     direction_x = direction_x - 1; //左
+	     led_2 = 1;
+	  end
+	  if(databag[1] == 8'h44)    
+	  begin
+	     direction_x = direction_x + 1; //右
+		  led_2  = 1;
+	  end
+	  if(databag[1] == 8'h53)
+	  begin
+	     direction_y = direction_y + 1; //右
+		  led_2  = 1;
+	  end	  
+	  if(databag[1] == 8'h57) 
+	  begin
+	     direction_y = direction_y - 1; //右
+		  led_2  = 1;
+	  end	 
+	  switch[direction_x][direction_y] = 1;//左上换能器置1
 	  for(e=0;e<=4;e=e+1)
 	  begin
 	     for(f=0;f<=4;f=f+1)
@@ -664,14 +699,15 @@ begin
 		     if(e!=direction_x || f!=direction_y) switch[e][f] = 0;//其它的switch都置0，为的是只让有一个为1
 		  end
 	  end
-	  delay <= 4*databag[2];//因为一个字节十六进制数只能表示到255，而设计的相位分辨是1024
-	  datanum <= 0;
-	  led_1 <= 1;
+	  delay = 4*databag[2];//因为一个字节十六进制数只能表示到255，而设计的相位分辨是1024
+	  datanum = 0;
+	  led_1 = 0;//能运行到这里
+	  //led_2 <= 0;
  end
  else 
  begin
      datanum <= 0;
-     led_1 <= 1;
+     led_2 <= 1;
  end
  
 

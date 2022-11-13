@@ -68,7 +68,7 @@ CHIP  "PLL"  ASSIGNED TO AN: EP4CE6E22C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-wav7_3                       : 1         : output : 2.5 V             :         : 1         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 1         :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 2         :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 3         :        :                   :         : 1         :                
 GND                          : 4         : gnd    :                   :         :           :                
@@ -141,7 +141,7 @@ wav0_1                       : 70        : output : 2.5 V             :         
 wav1_1                       : 71        : output : 2.5 V             :         : 4         : Y              
 wav0_0                       : 72        : output : 2.5 V             :         : 4         : Y              
 wav1_0                       : 73        : output : 2.5 V             :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 74        :        :                   :         : 5         :                
+clk_out                      : 74        : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 75        :        :                   :         : 5         :                
 led_1                        : 76        : output : 2.5 V             :         : 5         : Y              
 led_2                        : 77        : output : 2.5 V             :         : 5         : Y              
@@ -165,7 +165,7 @@ MSEL0                        : 94        :        :                   :         
 GND                          : 95        : gnd    :                   :         :           :                
 MSEL1                        : 96        :        :                   :         : 6         :                
 MSEL2                        : 97        :        :                   :         : 6         :                
-clk_out                      : 98        : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
 wav6_7                       : 99        : output : 2.5 V             :         : 6         : Y              
 wav7_7                       : 100       : output : 2.5 V             :         : 6         : Y              
 wav6_6                       : 101       : output : 2.5 V             :         : 6         : Y              
@@ -179,7 +179,7 @@ GNDA2                        : 108       : gnd    :                   :         
 VCCD_PLL2                    : 109       : power  :                   : 1.2V    :           :                
 wav7_4                       : 110       : output : 2.5 V             :         : 7         : Y              
 wav6_3                       : 111       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 112       :        :                   :         : 7         :                
+wav7_3                       : 112       : output : 2.5 V             :         : 7         : Y              
 wav6_2                       : 113       : output : 2.5 V             :         : 7         : Y              
 wav7_2                       : 114       : output : 2.5 V             :         : 7         : Y              
 wav6_1                       : 115       : output : 2.5 V             :         : 7         : Y              
